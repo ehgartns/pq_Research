@@ -22,7 +22,7 @@
 import pq_pkg::*;
 
 module high_level(input logic clk, rst, start,
-                  output logic [3:0] data1, data2,
+                  output logic [7:0] data1, data2,
                   output logic [2:0] red, green, blue,
                   output logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY);
                   
@@ -32,7 +32,7 @@ module high_level(input logic clk, rst, start,
                   //logic enq, deq;
                   //kv_t kvi, kvo;
                   
-                  logic [7:0] kvo_logic;
+                  logic [15:0] kvo_logic;
                   
                    // INTERFACE
                   

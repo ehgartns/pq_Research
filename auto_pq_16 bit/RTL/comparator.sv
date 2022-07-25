@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparator(input logic [3:0] kvo, count,
+module comparator(input logic [7:0] kvo,
                   output logic verdict );
                   
                   always_comb
-                    if ((kvo == count) || (count == 0)) verdict = 1'b0; // NO ERROR
+                    if (kvo == count) verdict = 1'b0; // NO ERROR
                     else verdict = 1'b1;
                     
 endmodule

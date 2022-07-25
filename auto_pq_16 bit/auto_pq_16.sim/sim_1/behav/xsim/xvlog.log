@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/pq_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/auto_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auto_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compcounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/flip_flop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flip_flop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_pq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/heap_pq.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heap_pq
+INFO: [VRFC 10-2458] undeclared symbol replace, assumed default net type wire [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/heap_pq.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/high_level.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module high_level
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/lfsr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/mem_swsr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_swsr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/pq_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/core_sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim

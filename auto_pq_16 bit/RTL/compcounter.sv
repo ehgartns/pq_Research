@@ -20,16 +20,32 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module  compcounter #(parameter W=4) (
-    input logic clk, rst, enb,
-    output logic [W-1:0] q,
-    output logic cteal_15
+module  compcounter (
+    input logic clk, rst, enb, empty,
+    input logic [7:0] din,
+    output logic verdict, cteal_15
     );
 
-    always_ff @(posedge clk)
-        if (rst)      q <= 1;
-        else if (enb) q <= q + 1;
-        
-    assign cteal_15 = ((q  == 15) || (q == 0));
+    // WIRES
+    logic [7:0] currentvalue, dump;
+    
+    flip_flop FF1 (.clk, .rst, .d(din), .q(currentvalue));
+    flip_flop FF2 (.clk, .rst, .d(currentvalue), .q(dump)); 
+    
+    always_comb
+        if (rst)
+            begin
+              /*  currentvalue = 0;
+                dump = 0; */
+                verdict = 0;
+                cteal_15 = 0;
+            end
+        else if (enb) 
+            begin
+                if (dump > currentvalue) verdict = 1;
+                else if ((currentvalue == 8'b11111111) && (empty)) cteal_15 = 1;
+            end
+                
+    
 
 endmodule: compcounter

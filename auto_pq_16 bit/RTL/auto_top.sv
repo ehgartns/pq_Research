@@ -23,11 +23,11 @@ import pq_pkg::*;
 module auto_top(pq_if.client ti,
                 input logic start,
                 output logic [2:0] color_r, color_g, color_b,
-                output logic [3:0] data1, data2,
+                output logic [7:0] data1, data2,
                 output logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY);
                 
-                logic [7:0] kvo_logic;
-                logic [3:0] kvi_logic;
+                logic [15:0] kvo_logic;
+                logic [7:0] kvi_logic;
                 
                 //INTERFACE DECLARATIONS
                 logic clk;
@@ -45,8 +45,8 @@ module auto_top(pq_if.client ti,
                 logic error_comp;
                 logic rst;
                 
-                assign data1 = kvo_logic[7:4];
-                assign data2 = kvo_logic[3:0];
+                assign data1 = kvo_logic[15:8];
+                assign data2 = kvo_logic[7:0];
                 
                 assign full = ti.full;
                 assign busy = ti.busy;
@@ -71,9 +71,9 @@ module auto_top(pq_if.client ti,
                 assign kvo = ti.kvo;
                 assign kvo_logic = kvo;
                 
-                compcounter COMPCOUNT (.clk, .rst(count_rst), .enb(count_enb), .q(counter2comp), .cteal_15(cteal_15));
+                compcounter COMPCOUNT (.clk, .rst(count_rst), .enb(count_enb), .empty, .din(kvo_logic[15:8]), .verdict(error_comp), .cteal_15(cteal_15));
                 
-                comparator COMP (.kvo(kvo_logic[7:4]), .count(counter2comp), .verdict(error_comp));
+                //comparator COMP (.kvo(kvo_logic[7:4]), .count(counter2comp), .verdict(error_comp));
                 
                 
 endmodule

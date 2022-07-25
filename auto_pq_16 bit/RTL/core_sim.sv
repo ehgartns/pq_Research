@@ -23,7 +23,7 @@
 module core_sim;
 
     logic clk, rst, start;
-    logic [3:0] data1, data2;
+    logic [7:0] data1, data2;
     logic [2:0] red, green, blue;
     logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY;
     
@@ -43,13 +43,7 @@ module core_sim;
     @ (posedge clk) #1;
     rst = 0;
     start = 1;
-    repeat (300) @(posedge clk); #1;
-    start = 0;
-    rst = 1;
-    repeat (10) @ (posedge clk); #1;
-    rst = 0;
-    start = 1;
-    repeat (300) @ (posedge clk); #1;
+    repeat (10750) @(posedge clk); #1;
     $stop;
     end
     

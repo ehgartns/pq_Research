@@ -126,6 +126,7 @@ module fsm_pq( input logic clk, rst, start, full, busy, empty, error_comp, cteal
                                 deq = 1;
                                 if (error_comp || cteal_15) next = DISPLAY;
                                 else next = REMOVE;
+                                if (cteal_15) count_enb = 0;
                             end
                             else begin
                                 count_enb = 0;

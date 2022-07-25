@@ -17,9 +17,9 @@ package pq_pkg;
 
     // struct data type for <key,value> pairs
 
-    parameter KEY_WIDTH=4;
-    parameter VAL_WIDTH=4;
-    parameter PQ_CAPACITY=15;
+    parameter KEY_WIDTH=8;
+    parameter VAL_WIDTH=8;
+    parameter PQ_CAPACITY=255;
 
     parameter [KEY_WIDTH-1:0] KEYINF = '1;
     parameter [KEY_WIDTH-1:0] KEY0 = '0;
