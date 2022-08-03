@@ -1,23 +1,8 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 407119709ca547208f9b55a8478e2d2a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ra_pq_s_top_behav xil_defaultlib.ra_pq_s_top xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 407119709ca547208f9b55a8478e2d2a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ra_pq_s_sim_behav xil_defaultlib.ra_pq_s_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_project.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_project.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.pq_pkg
-Compiling module xil_defaultlib.cb
-Compiling module xil_defaultlib.pq_rd_if
-Compiling module xil_defaultlib.ra_pq_mux3
-Compiling module xil_defaultlib.ra_pq_sort2
-Compiling module xil_defaultlib.ra_pq_reg
-Compiling module xil_defaultlib.ra_pq_s_default
-Compiling module xil_defaultlib.ra_pq_s_tb
-Compiling module xil_defaultlib.ra_pq_s_top
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot ra_pq_s_top_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

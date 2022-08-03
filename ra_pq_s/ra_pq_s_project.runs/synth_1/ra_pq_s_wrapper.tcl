@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_project.runs/synth_1/ra_pq_s_wrapper.tcl"
+  variable script "C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_s_project.runs/synth_1/ra_pq_s_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,38 +70,39 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_project.cache/wt [current_project]
-set_property parent.project_path C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_s_project.cache/wt [current_project]
+set_property parent.project_path C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_s_project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_s_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/counter.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/debounce.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/dec_3_8_n.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/mux8.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/period_enb.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/pq_pkg.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/pq_rd_if.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_mux3.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_reg.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_sort2.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/sevenseg_ctl.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/sevenseg_ext_n.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/single_pulser.sv
-  C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq_s_wrapper.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/counter.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/debounce.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/dec_3_8_n.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/mux8.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/period_enb.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/pq_pkg.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/pq_rd_if.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_mux3.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_reg.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_s.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_sort2.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/sevenseg_ctl.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/sevenseg_ext_n.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/single_pulser.sv
+  C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq_s_wrapper.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -112,8 +113,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq.xdc
-set_property used_in_implementation false [get_files C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/ra_pq_s/ra_pq.xdc]
+read_xdc C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq.xdc
+set_property used_in_implementation false [get_files C:/Users/ehgartns/Documents/new_pq_repo/ra_pq_s/ra_pq.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

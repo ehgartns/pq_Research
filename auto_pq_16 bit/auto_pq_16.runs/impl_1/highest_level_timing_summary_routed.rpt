@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Jul 25 14:34:38 2022
+| Date         : Mon Aug  1 15:37:31 2022
 | Host         : ECE419-92QW0Q2 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file highest_level_timing_summary_routed.rpt -pb highest_level_timing_summary_routed.pb -rpx highest_level_timing_summary_routed.rpx -warn_on_violation
 | Design       : highest_level
@@ -39,10 +39,10 @@ check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock (59)
+1. checking no_clock (0)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (4)
+4. checking unconstrained_internal_endpoints (0)
 5. checking no_input_delay (2)
 6. checking no_output_delay (24)
 7. checking multiple_clock (0)
@@ -52,75 +52,9 @@ Table of Contents
 11. checking partial_output_delay (0)
 12. checking latch_loops (0)
 
-1. checking no_clock (59)
--------------------------
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[4]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[5]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[6]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF1/q_reg[7]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[4]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[5]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[6]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/FF2/q_reg[7]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/AUTO/COMPCOUNT/cteal_15_reg/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/FSM/state_reg[0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/FSM/state_reg[1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/FSM/state_reg[2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/FSM/state_reg[3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/AUTO/FSM/state_reg[4]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/U_HEAP_PQ/FSM_sequential_state_reg[0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/U_HEAP_PQ/FSM_sequential_state_reg[1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/U_HEAP_PQ/FSM_sequential_state_reg[2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: CORE/U_HEAP_PQ/FSM_sequential_state_reg[3]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[0]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[1]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[2]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[3]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[4]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[5]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[6]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: CORE/U_HEAP_PQ/heap_size_reg[7]/Q (HIGH)
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
 
 
 2. checking constant_clock (0)
@@ -133,9 +67,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (4)
+4. checking unconstrained_internal_endpoints (0)
 ------------------------------------------------
- There are 4 pins that are not constrained for maximum delay. (HIGH)
+ There are 0 pins that are not constrained for maximum delay.
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -194,7 +128,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      5.669        0.000                      0                  375        0.122        0.000                      0                  375        6.500        0.000                       0                   173  
+      3.283        0.000                      0                  989        0.156        0.000                      0                  989        6.500        0.000                       0                   394  
 
 
 All user specified timing constraints are met.
@@ -217,7 +151,7 @@ sys_clk_pin  {0.000 7.000}      14.000          71.429
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         5.669        0.000                      0                  375        0.122        0.000                      0                  375        6.500        0.000                       0                   173  
+sys_clk_pin         3.283        0.000                      0                  989        0.156        0.000                      0                  989        6.500        0.000                       0                   394  
 
 
 ------------------------------------------------------------------------------------------------
@@ -248,28 +182,28 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        5.669ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.122ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        3.283ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.156ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        6.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             5.669ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[key][7]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.283ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[9]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        8.120ns  (logic 3.500ns (43.101%)  route 4.620ns (56.899%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.025ns = ( 19.025 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.905ns  (logic 3.478ns (35.115%)  route 6.427ns (64.885%))
+  Logic Levels:           6  (CARRY4=1 LUT6=5)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.150ns = ( 19.150 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -285,24 +219,26 @@ Slack (MET) :             5.669ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.825    13.411    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][7]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.067     9.978    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DOBDO[14]
+    SLICE_X3Y29          LUT6 (Prop_lut6_I2_O)        0.124    10.102 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104/O
+                         net (fo=1, routed)           0.402    10.505    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104_n_0
+    SLICE_X2Y29          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.404    10.909 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92/CO[3]
+                         net (fo=2, routed)           1.047    11.956    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92_n_0
+    SLICE_X2Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.080 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78/O
+                         net (fo=5, routed)           0.670    12.749    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78_n_0
+    SLICE_X3Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.873 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85/O
+                         net (fo=8, routed)           0.695    13.568    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85_n_0
+    SLICE_X7Y24          LUT6 (Prop_lut6_I5_O)        0.124    13.692 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_64/O
+                         net (fo=1, routed)           0.718    14.410    CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_15
+    SLICE_X7Y30          LUT6 (Prop_lut6_I5_O)        0.124    14.534 r  CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_i_18/O
+                         net (fo=1, routed)           0.828    15.362    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/DIADI[1]
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[9]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -312,31 +248,32 @@ Slack (MET) :             5.669ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.602    19.025    CORE/U_HEAP_PQ/CLK
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][7]/C
-                         clock pessimism              0.259    19.284    
-                         clock uncertainty           -0.035    19.248    
-    SLICE_X6Y57          FDRE (Setup_fdre_C_CE)      -0.169    19.079    CORE/U_HEAP_PQ/kvo_reg[key][7]
+                         net (fo=393, routed)         1.727    19.150    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.417    
+                         clock uncertainty           -0.035    19.382    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[9])
+                                                     -0.737    18.645    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.079    
-                         arrival time                         -13.411    
+                         required time                         18.645    
+                         arrival time                         -15.362    
   -------------------------------------------------------------------
-                         slack                                  5.669    
+                         slack                                  3.283    
 
-Slack (MET) :             5.669ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[value][3]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.323ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        8.120ns  (logic 3.500ns (43.101%)  route 4.620ns (56.899%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.025ns = ( 19.025 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.865ns  (logic 3.478ns (35.256%)  route 6.387ns (64.744%))
+  Logic Levels:           6  (CARRY4=1 LUT6=5)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.150ns = ( 19.150 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -352,24 +289,26 @@ Slack (MET) :             5.669ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.825    13.411    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][3]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.067     9.978    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DOBDO[14]
+    SLICE_X3Y29          LUT6 (Prop_lut6_I2_O)        0.124    10.102 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104/O
+                         net (fo=1, routed)           0.402    10.505    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104_n_0
+    SLICE_X2Y29          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.404    10.909 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92/CO[3]
+                         net (fo=2, routed)           1.047    11.956    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92_n_0
+    SLICE_X2Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.080 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78/O
+                         net (fo=5, routed)           0.670    12.749    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78_n_0
+    SLICE_X3Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.873 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85/O
+                         net (fo=8, routed)           0.752    13.625    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85_n_0
+    SLICE_X6Y23          LUT6 (Prop_lut6_I5_O)        0.124    13.749 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_62/O
+                         net (fo=1, routed)           0.775    14.525    CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_17
+    SLICE_X7Y32          LUT6 (Prop_lut6_I5_O)        0.124    14.649 r  CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_i_16/O
+                         net (fo=1, routed)           0.673    15.322    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/DIADI[3]
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[11]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -379,31 +318,32 @@ Slack (MET) :             5.669ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.602    19.025    CORE/U_HEAP_PQ/CLK
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][3]/C
-                         clock pessimism              0.259    19.284    
-                         clock uncertainty           -0.035    19.248    
-    SLICE_X6Y57          FDRE (Setup_fdre_C_CE)      -0.169    19.079    CORE/U_HEAP_PQ/kvo_reg[value][3]
+                         net (fo=393, routed)         1.727    19.150    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.417    
+                         clock uncertainty           -0.035    19.382    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[11])
+                                                     -0.737    18.645    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.079    
-                         arrival time                         -13.411    
+                         required time                         18.645    
+                         arrival time                         -15.322    
   -------------------------------------------------------------------
-                         slack                                  5.669    
+                         slack                                  3.323    
 
-Slack (MET) :             5.669ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[value][7]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.417ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[10]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        8.120ns  (logic 3.500ns (43.101%)  route 4.620ns (56.899%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.025ns = ( 19.025 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.771ns  (logic 3.478ns (35.595%)  route 6.293ns (64.405%))
+  Logic Levels:           6  (CARRY4=1 LUT6=5)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.150ns = ( 19.150 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -419,24 +359,26 @@ Slack (MET) :             5.669ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.825    13.411    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][7]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.067     9.978    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DOBDO[14]
+    SLICE_X3Y29          LUT6 (Prop_lut6_I2_O)        0.124    10.102 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104/O
+                         net (fo=1, routed)           0.402    10.505    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104_n_0
+    SLICE_X2Y29          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.404    10.909 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92/CO[3]
+                         net (fo=2, routed)           1.047    11.956    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92_n_0
+    SLICE_X2Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.080 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78/O
+                         net (fo=5, routed)           0.670    12.749    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78_n_0
+    SLICE_X3Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.873 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85/O
+                         net (fo=8, routed)           0.852    13.725    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85_n_0
+    SLICE_X7Y21          LUT6 (Prop_lut6_I5_O)        0.124    13.849 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_63/O
+                         net (fo=1, routed)           0.664    14.513    CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_16
+    SLICE_X7Y30          LUT6 (Prop_lut6_I5_O)        0.124    14.637 r  CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_i_17/O
+                         net (fo=1, routed)           0.591    15.228    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/DIADI[2]
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[10]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -446,31 +388,32 @@ Slack (MET) :             5.669ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.602    19.025    CORE/U_HEAP_PQ/CLK
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][7]/C
-                         clock pessimism              0.259    19.284    
-                         clock uncertainty           -0.035    19.248    
-    SLICE_X6Y57          FDRE (Setup_fdre_C_CE)      -0.169    19.079    CORE/U_HEAP_PQ/kvo_reg[value][7]
+                         net (fo=393, routed)         1.727    19.150    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.417    
+                         clock uncertainty           -0.035    19.382    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[10])
+                                                     -0.737    18.645    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.079    
-                         arrival time                         -13.411    
+                         required time                         18.645    
+                         arrival time                         -15.228    
   -------------------------------------------------------------------
-                         slack                                  5.669    
+                         slack                                  3.417    
 
-Slack (MET) :             5.969ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[key][0]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.452ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[15]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.785ns  (logic 3.500ns (44.956%)  route 4.285ns (55.044%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.735ns  (logic 3.478ns (35.726%)  route 6.257ns (64.274%))
+  Logic Levels:           6  (CARRY4=1 LUT6=5)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.150ns = ( 19.150 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -486,24 +429,26 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.490    13.076    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][0]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.067     9.978    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DOBDO[14]
+    SLICE_X3Y29          LUT6 (Prop_lut6_I2_O)        0.124    10.102 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104/O
+                         net (fo=1, routed)           0.402    10.505    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104_n_0
+    SLICE_X2Y29          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.404    10.909 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92/CO[3]
+                         net (fo=2, routed)           0.929    11.838    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92_n_0
+    SLICE_X2Y26          LUT6 (Prop_lut6_I1_O)        0.124    11.962 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_79/O
+                         net (fo=10, routed)          0.699    12.661    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_1
+    SLICE_X2Y26          LUT6 (Prop_lut6_I0_O)        0.124    12.785 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_84/O
+                         net (fo=8, routed)           0.825    13.610    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_84_n_0
+    SLICE_X7Y21          LUT6 (Prop_lut6_I1_O)        0.124    13.734 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_58/O
+                         net (fo=1, routed)           0.657    14.391    CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_21
+    SLICE_X7Y31          LUT6 (Prop_lut6_I5_O)        0.124    14.515 r  CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_i_12/O
+                         net (fo=1, routed)           0.677    15.192    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/DIADI[7]
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[15]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -513,31 +458,32 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][0]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X4Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[key][0]
+                         net (fo=393, routed)         1.727    19.150    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.417    
+                         clock uncertainty           -0.035    19.382    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[15])
+                                                     -0.737    18.645    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.076    
+                         required time                         18.645    
+                         arrival time                         -15.192    
   -------------------------------------------------------------------
-                         slack                                  5.969    
+                         slack                                  3.452    
 
-Slack (MET) :             5.969ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[key][4]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.461ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[16]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.785ns  (logic 3.500ns (44.956%)  route 4.285ns (55.044%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.726ns  (logic 3.478ns (35.759%)  route 6.248ns (64.241%))
+  Logic Levels:           6  (CARRY4=1 LUT6=5)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.150ns = ( 19.150 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -553,24 +499,26 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.490    13.076    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][4]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.067     9.978    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DOBDO[14]
+    SLICE_X3Y29          LUT6 (Prop_lut6_I2_O)        0.124    10.102 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104/O
+                         net (fo=1, routed)           0.402    10.505    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104_n_0
+    SLICE_X2Y29          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.404    10.909 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92/CO[3]
+                         net (fo=2, routed)           0.929    11.838    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92_n_0
+    SLICE_X2Y26          LUT6 (Prop_lut6_I1_O)        0.124    11.962 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_79/O
+                         net (fo=10, routed)          0.699    12.661    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_1
+    SLICE_X2Y26          LUT6 (Prop_lut6_I0_O)        0.124    12.785 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_84/O
+                         net (fo=8, routed)           0.821    13.606    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_84_n_0
+    SLICE_X7Y21          LUT6 (Prop_lut6_I1_O)        0.124    13.730 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_57/O
+                         net (fo=1, routed)           0.794    14.524    CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_22
+    SLICE_X6Y30          LUT6 (Prop_lut6_I5_O)        0.124    14.648 r  CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_i_11/O
+                         net (fo=1, routed)           0.536    15.183    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/DIADI[8]
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[16]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -580,31 +528,32 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][4]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X4Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[key][4]
+                         net (fo=393, routed)         1.727    19.150    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.417    
+                         clock uncertainty           -0.035    19.382    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[16])
+                                                     -0.737    18.645    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.076    
+                         required time                         18.645    
+                         arrival time                         -15.183    
   -------------------------------------------------------------------
-                         slack                                  5.969    
+                         slack                                  3.461    
 
-Slack (MET) :             5.969ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[value][1]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.551ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.785ns  (logic 3.500ns (44.956%)  route 4.285ns (55.044%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.636ns  (logic 3.478ns (36.093%)  route 6.158ns (63.907%))
+  Logic Levels:           6  (CARRY4=1 LUT6=5)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.150ns = ( 19.150 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -620,24 +569,26 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.490    13.076    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][1]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.067     9.978    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DOBDO[14]
+    SLICE_X3Y29          LUT6 (Prop_lut6_I2_O)        0.124    10.102 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104/O
+                         net (fo=1, routed)           0.402    10.505    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_104_n_0
+    SLICE_X2Y29          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.404    10.909 f  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92/CO[3]
+                         net (fo=2, routed)           1.047    11.956    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_92_n_0
+    SLICE_X2Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.080 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78/O
+                         net (fo=5, routed)           0.670    12.749    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_78_n_0
+    SLICE_X3Y26          LUT6 (Prop_lut6_I2_O)        0.124    12.873 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85/O
+                         net (fo=8, routed)           0.849    13.722    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_85_n_0
+    SLICE_X7Y21          LUT6 (Prop_lut6_I5_O)        0.124    13.846 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg_i_59/O
+                         net (fo=1, routed)           0.732    14.578    CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_20
+    SLICE_X7Y32          LUT6 (Prop_lut6_I5_O)        0.124    14.702 r  CORE/U_PHEAP/genHeap[2].I_LEQ/level_ram_reg_i_13/O
+                         net (fo=1, routed)           0.392    15.093    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/DIADI[6]
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/DIADI[14]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -647,31 +598,32 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][1]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X4Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[value][1]
+                         net (fo=393, routed)         1.727    19.150    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y6          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.417    
+                         clock uncertainty           -0.035    19.382    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[14])
+                                                     -0.737    18.645    CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.076    
+                         required time                         18.645    
+                         arrival time                         -15.093    
   -------------------------------------------------------------------
-                         slack                                  5.969    
+                         slack                                  3.551    
 
-Slack (MET) :             5.969ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[value][4]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.605ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DIADI[18]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.785ns  (logic 3.500ns (44.956%)  route 4.285ns (55.044%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.596ns  (logic 3.348ns (34.891%)  route 6.248ns (65.109%))
+  Logic Levels:           5  (CARRY4=1 LUT6=4)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.147ns = ( 19.147 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.457ns
+    Clock Pessimism Removal (CPR):    0.283ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -687,24 +639,24 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.855     5.457    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.490    13.076    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][4]/CE
+    RAMB36_X0Y3          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[22])
+                                                      2.454     7.911 r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DOBDO[22]
+                         net (fo=9, routed)           2.417    10.328    CORE/U_PHEAP/genHeap[3].I_LEQ/DOBDO[14]
+    SLICE_X0Y27          LUT6 (Prop_lut6_I0_O)        0.124    10.452 r  CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_102__0/O
+                         net (fo=1, routed)           0.474    10.926    CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_102__0_n_0
+    SLICE_X1Y26          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    11.324 r  CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_75__0/CO[3]
+                         net (fo=7, routed)           1.393    12.717    CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_75__0_n_0
+    SLICE_X2Y22          LUT6 (Prop_lut6_I0_O)        0.124    12.841 r  CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_74__0/O
+                         net (fo=8, routed)           0.466    13.307    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_15
+    SLICE_X3Y24          LUT6 (Prop_lut6_I5_O)        0.124    13.431 r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_38__0/O
+                         net (fo=1, routed)           0.759    14.190    CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_10
+    SLICE_X5Y20          LUT6 (Prop_lut6_I0_O)        0.124    14.314 r  CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_10__0/O
+                         net (fo=1, routed)           0.739    15.053    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DIADI[10]
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DIADI[18]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -714,31 +666,32 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][4]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X4Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[value][4]
+                         net (fo=393, routed)         1.724    19.147    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.283    19.430    
+                         clock uncertainty           -0.035    19.395    
+    RAMB36_X0Y3          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[18])
+                                                     -0.737    18.658    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.076    
+                         required time                         18.658    
+                         arrival time                         -15.053    
   -------------------------------------------------------------------
-                         slack                                  5.969    
+                         slack                                  3.605    
 
-Slack (MET) :             5.969ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[value][5]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.623ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DIADI[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.785ns  (logic 3.500ns (44.956%)  route 4.285ns (55.044%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.572ns  (logic 3.796ns (39.657%)  route 5.776ns (60.342%))
+  Logic Levels:           6  (CARRY4=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.033ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.147ns = ( 19.147 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.447ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -754,24 +707,26 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.845     5.447    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y5          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.490    13.076    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][5]/CE
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[18])
+                                                      2.454     7.901 r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/DOBDO[18]
+                         net (fo=9, routed)           1.413     9.314    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/DOBDO[10]
+    SLICE_X5Y27          LUT6 (Prop_lut6_I2_O)        0.124     9.438 r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_115__0/O
+                         net (fo=1, routed)           0.488     9.926    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_115__0_n_0
+    SLICE_X4Y26          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526    10.452 f  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_97__0/CO[3]
+                         net (fo=6, routed)           1.148    11.600    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_97__0_n_0
+    SLICE_X3Y22          LUT5 (Prop_lut5_I4_O)        0.118    11.718 r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/pos_out[2]_i_3/O
+                         net (fo=2, routed)           0.481    12.199    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/pos_out[2]_i_3_n_0
+    SLICE_X4Y22          LUT6 (Prop_lut6_I3_O)        0.326    12.525 r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_90__0/O
+                         net (fo=9, routed)           0.813    13.338    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_90__0_n_0
+    SLICE_X6Y25          LUT6 (Prop_lut6_I1_O)        0.124    13.462 r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg_i_48__0/O
+                         net (fo=1, routed)           0.611    14.073    CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_2
+    SLICE_X5Y23          LUT6 (Prop_lut6_I0_O)        0.124    14.197 r  CORE/U_PHEAP/genHeap[3].I_LEQ/level_ram_reg_i_17__0/O
+                         net (fo=1, routed)           0.822    15.019    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/DIADI[3]
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/DIADI[11]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -781,31 +736,32 @@ Slack (MET) :             5.969ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[value][5]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X4Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[value][5]
+                         net (fo=393, routed)         1.724    19.147    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y3          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.414    
+                         clock uncertainty           -0.035    19.379    
+    RAMB36_X0Y3          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[11])
+                                                     -0.737    18.642    CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.076    
+                         required time                         18.642    
+                         arrival time                         -15.019    
   -------------------------------------------------------------------
-                         slack                                  5.969    
+                         slack                                  3.623    
 
-Slack (MET) :             5.970ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[key][1]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.627ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/DIADI[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.784ns  (logic 3.500ns (44.962%)  route 4.284ns (55.038%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.562ns  (logic 3.817ns (39.920%)  route 5.745ns (60.080%))
+  Logic Levels:           6  (CARRY4=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.145ns = ( 19.145 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -821,24 +777,26 @@ Slack (MET) :             5.970ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.849     5.451    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y4          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.489    13.075    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X5Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][1]/CE
+    RAMB36_X0Y4          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[18])
+                                                      2.454     7.905 r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/DOBDO[18]
+                         net (fo=9, routed)           1.839     9.744    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/DOBDO[12]
+    SLICE_X10Y27         LUT6 (Prop_lut6_I2_O)        0.124     9.868 r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_128/O
+                         net (fo=1, routed)           0.379    10.247    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_128_n_0
+    SLICE_X11Y28         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526    10.773 r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_114__1/CO[3]
+                         net (fo=7, routed)           0.983    11.756    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_114__1_n_0
+    SLICE_X12Y24         LUT6 (Prop_lut6_I0_O)        0.124    11.880 r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_124__0/O
+                         net (fo=1, routed)           0.436    12.316    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_124__0_n_0
+    SLICE_X12Y24         LUT6 (Prop_lut6_I0_O)        0.124    12.440 r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_102__1/O
+                         net (fo=8, routed)           0.806    13.246    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_102__1_n_0
+    SLICE_X8Y25          LUT4 (Prop_lut4_I0_O)        0.117    13.363 r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg_i_53__1/O
+                         net (fo=1, routed)           0.459    13.822    CORE/U_PHEAP/genHeap[4].I_LEQ/level_ram_reg_21
+    SLICE_X8Y28          LUT6 (Prop_lut6_I5_O)        0.348    14.170 r  CORE/U_PHEAP/genHeap[4].I_LEQ/level_ram_reg_i_18__1/O
+                         net (fo=1, routed)           0.843    15.013    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/DIADI[3]
+    RAMB36_X0Y5          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/DIADI[11]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -848,31 +806,32 @@ Slack (MET) :             5.970ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][1]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X5Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[key][1]
+                         net (fo=393, routed)         1.722    19.145    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y5          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.412    
+                         clock uncertainty           -0.035    19.377    
+    RAMB36_X0Y5          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[11])
+                                                     -0.737    18.640    CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.075    
+                         required time                         18.640    
+                         arrival time                         -15.013    
   -------------------------------------------------------------------
-                         slack                                  5.970    
+                         slack                                  3.627    
 
-Slack (MET) :             5.970ns  (required time - arrival time)
-  Source:                 CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/kvo_reg[key][2]/CE
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+Slack (MET) :             3.641ns  (required time - arrival time)
+  Source:                 CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/DIADI[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            14.000ns  (sys_clk_pin rise@14.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        7.784ns  (logic 3.500ns (44.962%)  route 4.284ns (55.038%))
-  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT6=3)
-  Clock Path Skew:        -0.005ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.026ns = ( 19.026 - 14.000 ) 
-    Source Clock Delay      (SCD):    5.290ns
-    Clock Pessimism Removal (CPR):    0.259ns
+  Data Path Delay:        9.536ns  (logic 3.811ns (39.964%)  route 5.725ns (60.036%))
+  Logic Levels:           6  (CARRY4=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.142ns = ( 19.142 - 14.000 ) 
+    Source Clock Delay      (SCD):    5.460ns
+    Clock Pessimism Removal (CPR):    0.267ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -888,24 +847,26 @@ Slack (MET) :             5.970ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.688     5.290    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
+                         net (fo=393, routed)         1.858     5.460    CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y7          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X0Y22         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
-                                                      2.454     7.744 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DOADO[11]
-                         net (fo=8, routed)           1.361     9.105    CORE/U_HEAP_PQ/U_HEAPMEM/DOADO[11]
-    SLICE_X9Y57          LUT4 (Prop_lut4_I0_O)        0.124     9.229 r  CORE/U_HEAP_PQ/U_HEAPMEM/we1_carry_i_7/O
-                         net (fo=1, routed)           0.000     9.229    CORE/U_HEAP_PQ/U_HEAPMEM_n_41
-    SLICE_X9Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     9.779 r  CORE/U_HEAP_PQ/we1_carry/CO[3]
-                         net (fo=30, routed)          1.196    10.975    CORE/U_HEAP_PQ/U_HEAPMEM/CO[0]
-    SLICE_X6Y51          LUT6 (Prop_lut6_I0_O)        0.124    11.099 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8/O
-                         net (fo=1, routed)           0.670    11.769    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_8_n_0
-    SLICE_X6Y51          LUT6 (Prop_lut6_I4_O)        0.124    11.893 f  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3/O
-                         net (fo=1, routed)           0.568    12.462    CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_3_n_0
-    SLICE_X6Y54          LUT6 (Prop_lut6_I5_O)        0.124    12.586 r  CORE/U_HEAP_PQ/U_HEAPMEM/kvo[key][7]_i_1/O
-                         net (fo=16, routed)          0.489    13.075    CORE/U_HEAP_PQ/p_1_out
-    SLICE_X5Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][2]/CE
+    RAMB36_X0Y7          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[19])
+                                                      2.454     7.914 r  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg/DOBDO[19]
+                         net (fo=9, routed)           1.209     9.123    CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/DOBDO[13]
+    SLICE_X10Y34         LUT6 (Prop_lut6_I4_O)        0.124     9.247 r  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/pos_out[0]_i_17__1/O
+                         net (fo=1, routed)           0.568     9.815    CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/pos_out[0]_i_17__1_n_0
+    SLICE_X11Y34         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    10.322 f  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/pos_out_reg[0]_i_7/CO[3]
+                         net (fo=4, routed)           0.951    11.274    CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/pos_out_reg[0]_i_7_n_0
+    SLICE_X12Y34         LUT5 (Prop_lut5_I4_O)        0.150    11.424 f  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg_i_84__2/O
+                         net (fo=4, routed)           0.498    11.921    CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/genHeap[5].I_LEQ/cmp_entry_entry_gt1_out
+    SLICE_X12Y34         LUT6 (Prop_lut6_I4_O)        0.328    12.249 r  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg_i_90__2/O
+                         net (fo=8, routed)           0.896    13.145    CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg_i_90__2_n_0
+    SLICE_X8Y37          LUT6 (Prop_lut6_I5_O)        0.124    13.269 r  CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg_i_63__2/O
+                         net (fo=1, routed)           0.706    13.974    CORE/U_PHEAP/genHeap[5].I_LEQ/level_ram_reg_20
+    SLICE_X8Y31          LUT6 (Prop_lut6_I5_O)        0.124    14.098 r  CORE/U_PHEAP/genHeap[5].I_LEQ/level_ram_reg_i_16__2/O
+                         net (fo=1, routed)           0.898    14.996    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/DIADI[7]
+    RAMB36_X0Y4          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/DIADI[14]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -915,16 +876,17 @@ Slack (MET) :             5.970ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    15.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    17.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    17.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         1.603    19.026    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][2]/C
-                         clock pessimism              0.259    19.285    
-                         clock uncertainty           -0.035    19.249    
-    SLICE_X5Y56          FDRE (Setup_fdre_C_CE)      -0.205    19.044    CORE/U_HEAP_PQ/kvo_reg[key][2]
+                         net (fo=393, routed)         1.719    19.142    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y4          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism              0.267    19.409    
+                         clock uncertainty           -0.035    19.374    
+    RAMB36_X0Y4          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[14])
+                                                     -0.737    18.637    CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg
   -------------------------------------------------------------------
-                         required time                         19.044    
-                         arrival time                         -13.075    
+                         required time                         18.637    
+                         arrival time                         -14.996    
   -------------------------------------------------------------------
-                         slack                                  5.970    
+                         slack                                  3.641    
 
 
 
@@ -932,479 +894,20 @@ Slack (MET) :             5.970ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.122ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/i_kv_reg[key][4]/C
+Slack (MET) :             0.156ns  (arrival time - required time)
+  Source:                 CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DIADI[12]
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.498ns  (logic 0.209ns (41.995%)  route 0.289ns (58.005%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.079ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.052ns
-    Source Clock Delay      (SCD):    1.493ns
-    Clock Pessimism Removal (CPR):    0.479ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.574     1.493    CORE/U_HEAP_PQ/CLK
-    SLICE_X10Y58         FDRE                                         r  CORE/U_HEAP_PQ/i_kv_reg[key][4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X10Y58         FDRE (Prop_fdre_C_Q)         0.164     1.657 r  CORE/U_HEAP_PQ/i_kv_reg[key][4]/Q
-                         net (fo=5, routed)           0.173     1.830    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_3[4]
-    SLICE_X8Y57          LUT6 (Prop_lut6_I1_O)        0.045     1.875 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_i_12/O
-                         net (fo=2, routed)           0.116     1.991    CORE/U_HEAP_PQ/U_HEAPMEM/DIADI[12]
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DIADI[12]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.887     2.052    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                         clock pessimism             -0.479     1.573    
-    RAMB18_X0Y22         RAMB18E1 (Hold_ramb18e1_CLKARDCLK_DIADI[12])
-                                                      0.296     1.869    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg
-  -------------------------------------------------------------------
-                         required time                         -1.869    
-                         arrival time                           1.991    
-  -------------------------------------------------------------------
-                         slack                                  0.122    
-
-Slack (MET) :             0.152ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/i_kv_reg[key][7]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/min_kv_reg[key][7]/D
+  Destination:            CORE/AUTO/COMPCOUNT/FF2/q_reg[3]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.285ns  (logic 0.186ns (65.209%)  route 0.099ns (34.791%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.011ns
-    Source Clock Delay      (SCD):    1.494ns
-    Clock Pessimism Removal (CPR):    0.503ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.575     1.494    CORE/U_HEAP_PQ/CLK
-    SLICE_X11Y56         FDRE                                         r  CORE/U_HEAP_PQ/i_kv_reg[key][7]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X11Y56         FDRE (Prop_fdre_C_Q)         0.141     1.635 r  CORE/U_HEAP_PQ/i_kv_reg[key][7]/Q
-                         net (fo=5, routed)           0.099     1.735    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_3[7]
-    SLICE_X10Y56         LUT5 (Prop_lut5_I0_O)        0.045     1.780 r  CORE/U_HEAP_PQ/U_HEAPMEM/min_kv[key][7]_i_2/O
-                         net (fo=1, routed)           0.000     1.780    CORE/U_HEAP_PQ/U_HEAPMEM_n_63
-    SLICE_X10Y56         FDRE                                         r  CORE/U_HEAP_PQ/min_kv_reg[key][7]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.846     2.011    CORE/U_HEAP_PQ/CLK
-    SLICE_X10Y56         FDRE                                         r  CORE/U_HEAP_PQ/min_kv_reg[key][7]/C
-                         clock pessimism             -0.503     1.507    
-    SLICE_X10Y56         FDRE (Hold_fdre_C_D)         0.120     1.627    CORE/U_HEAP_PQ/min_kv_reg[key][7]
-  -------------------------------------------------------------------
-                         required time                         -1.627    
-                         arrival time                           1.780    
-  -------------------------------------------------------------------
-                         slack                                  0.152    
-
-Slack (MET) :             0.177ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/j_kv_reg[key][7]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DIADI[15]
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.552ns  (logic 0.231ns (41.849%)  route 0.321ns (58.151%))
-  Logic Levels:           2  (LUT6=2)
-  Clock Path Skew:        0.079ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.052ns
-    Source Clock Delay      (SCD):    1.493ns
-    Clock Pessimism Removal (CPR):    0.479ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.574     1.493    CORE/U_HEAP_PQ/CLK
-    SLICE_X11Y57         FDRE                                         r  CORE/U_HEAP_PQ/j_kv_reg[key][7]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X11Y57         FDRE (Prop_fdre_C_Q)         0.141     1.634 r  CORE/U_HEAP_PQ/j_kv_reg[key][7]/Q
-                         net (fo=1, routed)           0.091     1.725    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_4[7]
-    SLICE_X10Y57         LUT6 (Prop_lut6_I3_O)        0.045     1.770 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_i_57/O
-                         net (fo=1, routed)           0.054     1.824    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_i_57_n_0
-    SLICE_X10Y57         LUT6 (Prop_lut6_I5_O)        0.045     1.869 r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg_i_9/O
-                         net (fo=2, routed)           0.176     2.045    CORE/U_HEAP_PQ/U_HEAPMEM/DIADI[15]
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/DIADI[15]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.887     2.052    CORE/U_HEAP_PQ/U_HEAPMEM/CLK
-    RAMB18_X0Y22         RAMB18E1                                     r  CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-                         clock pessimism             -0.479     1.573    
-    RAMB18_X0Y22         RAMB18E1 (Hold_ramb18e1_CLKARDCLK_DIADI[15])
-                                                      0.296     1.869    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg
-  -------------------------------------------------------------------
-                         required time                         -1.869    
-                         arrival time                           2.045    
-  -------------------------------------------------------------------
-                         slack                                  0.177    
-
-Slack (MET) :             0.177ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/kvo_reg[key][3]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.262ns  (logic 0.141ns (53.808%)  route 0.121ns (46.192%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.038ns
-    Source Clock Delay      (SCD):    1.522ns
-    Clock Pessimism Removal (CPR):    0.500ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.603     1.522    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y56          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  CORE/U_HEAP_PQ/kvo_reg[key][3]/Q
-                         net (fo=2, routed)           0.121     1.784    CORE/AUTO/COMPCOUNT/FF1/q_reg[7]_0[3]
-    SLICE_X4Y57          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.873     2.038    CORE/AUTO/COMPCOUNT/FF1/CLK
-    SLICE_X4Y57          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/C
-                         clock pessimism             -0.500     1.537    
-    SLICE_X4Y57          FDRE (Hold_fdre_C_D)         0.070     1.607    CORE/AUTO/COMPCOUNT/FF1/q_reg[3]
-  -------------------------------------------------------------------
-                         required time                         -1.607    
-                         arrival time                           1.784    
-  -------------------------------------------------------------------
-                         slack                                  0.177    
-
-Slack (MET) :             0.180ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/ni_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/nmin_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.284ns  (logic 0.186ns (65.521%)  route 0.098ns (34.479%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.040ns
-    Source Clock Delay      (SCD):    1.523ns
-    Clock Pessimism Removal (CPR):    0.503ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.604     1.523    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y50          FDRE                                         r  CORE/U_HEAP_PQ/ni_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X4Y50          FDRE (Prop_fdre_C_Q)         0.141     1.664 r  CORE/U_HEAP_PQ/ni_reg[2]/Q
-                         net (fo=15, routed)          0.098     1.762    CORE/U_HEAP_PQ/in20[3]
-    SLICE_X5Y50          LUT3 (Prop_lut3_I0_O)        0.045     1.807 r  CORE/U_HEAP_PQ/nmin[3]_i_1/O
-                         net (fo=1, routed)           0.000     1.807    CORE/U_HEAP_PQ/nmin_next[3]
-    SLICE_X5Y50          FDRE                                         r  CORE/U_HEAP_PQ/nmin_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.875     2.040    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y50          FDRE                                         r  CORE/U_HEAP_PQ/nmin_reg[3]/C
-                         clock pessimism             -0.503     1.536    
-    SLICE_X5Y50          FDRE (Hold_fdre_C_D)         0.091     1.627    CORE/U_HEAP_PQ/nmin_reg[3]
-  -------------------------------------------------------------------
-                         required time                         -1.627    
-                         arrival time                           1.807    
-  -------------------------------------------------------------------
-                         slack                                  0.180    
-
-Slack (MET) :             0.188ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/kvo_reg[key][7]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/AUTO/COMPCOUNT/FF1/q_reg[7]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.275ns  (logic 0.164ns (59.662%)  route 0.111ns (40.338%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.038ns
-    Source Clock Delay      (SCD):    1.521ns
-    Clock Pessimism Removal (CPR):    0.500ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.602     1.521    CORE/U_HEAP_PQ/CLK
-    SLICE_X6Y57          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][7]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X6Y57          FDRE (Prop_fdre_C_Q)         0.164     1.685 r  CORE/U_HEAP_PQ/kvo_reg[key][7]/Q
-                         net (fo=2, routed)           0.111     1.796    CORE/AUTO/COMPCOUNT/FF1/q_reg[7]_0[7]
-    SLICE_X4Y57          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[7]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.873     2.038    CORE/AUTO/COMPCOUNT/FF1/CLK
-    SLICE_X4Y57          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[7]/C
-                         clock pessimism             -0.500     1.537    
-    SLICE_X4Y57          FDRE (Hold_fdre_C_D)         0.071     1.608    CORE/AUTO/COMPCOUNT/FF1/q_reg[7]
-  -------------------------------------------------------------------
-                         required time                         -1.608    
-                         arrival time                           1.796    
-  -------------------------------------------------------------------
-                         slack                                  0.188    
-
-Slack (MET) :             0.192ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/ni_reg[0]/C
-                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/nmin_reg[1]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.296ns  (logic 0.186ns (62.849%)  route 0.110ns (37.151%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.040ns
-    Source Clock Delay      (SCD):    1.523ns
-    Clock Pessimism Removal (CPR):    0.503ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.604     1.523    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y52          FDSE                                         r  CORE/U_HEAP_PQ/ni_reg[0]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X4Y52          FDSE (Prop_fdse_C_Q)         0.141     1.664 r  CORE/U_HEAP_PQ/ni_reg[0]/Q
-                         net (fo=10, routed)          0.110     1.774    CORE/U_HEAP_PQ/in20[1]
-    SLICE_X5Y52          LUT3 (Prop_lut3_I0_O)        0.045     1.819 r  CORE/U_HEAP_PQ/nmin[1]_i_1/O
-                         net (fo=1, routed)           0.000     1.819    CORE/U_HEAP_PQ/nmin_next[1]
-    SLICE_X5Y52          FDRE                                         r  CORE/U_HEAP_PQ/nmin_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.875     2.040    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y52          FDRE                                         r  CORE/U_HEAP_PQ/nmin_reg[1]/C
-                         clock pessimism             -0.503     1.536    
-    SLICE_X5Y52          FDRE (Hold_fdre_C_D)         0.091     1.627    CORE/U_HEAP_PQ/nmin_reg[1]
-  -------------------------------------------------------------------
-                         required time                         -1.627    
-                         arrival time                           1.819    
-  -------------------------------------------------------------------
-                         slack                                  0.192    
-
-Slack (MET) :             0.201ns  (arrival time - required time)
-  Source:                 RGB/q_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            RGB/q_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.321ns  (logic 0.190ns (59.157%)  route 0.131ns (40.843%))
-  Logic Levels:           1  (LUT4=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.040ns
-    Source Clock Delay      (SCD):    1.521ns
-    Clock Pessimism Removal (CPR):    0.505ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.602     1.521    RGB/CLK
-    SLICE_X1Y60          FDRE                                         r  RGB/q_reg[0]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X1Y60          FDRE (Prop_fdre_C_Q)         0.141     1.662 r  RGB/q_reg[0]/Q
-                         net (fo=6, routed)           0.131     1.794    RGB/q_reg[0]
-    SLICE_X0Y60          LUT4 (Prop_lut4_I2_O)        0.049     1.843 r  RGB/q[3]_i_1/O
-                         net (fo=1, routed)           0.000     1.843    RGB/p_0_in[3]
-    SLICE_X0Y60          FDRE                                         r  RGB/q_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.875     2.040    RGB/CLK
-    SLICE_X0Y60          FDRE                                         r  RGB/q_reg[3]/C
-                         clock pessimism             -0.505     1.534    
-    SLICE_X0Y60          FDRE (Hold_fdre_C_D)         0.107     1.641    RGB/q_reg[3]
-  -------------------------------------------------------------------
-                         required time                         -1.641    
-                         arrival time                           1.843    
-  -------------------------------------------------------------------
-                         slack                                  0.201    
-
-Slack (MET) :             0.203ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/nmin_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/U_HEAP_PQ/ni_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.308ns  (logic 0.186ns (60.363%)  route 0.122ns (39.637%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.040ns
-    Source Clock Delay      (SCD):    1.523ns
-    Clock Pessimism Removal (CPR):    0.503ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.644     0.894    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.604     1.523    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y50          FDRE                                         r  CORE/U_HEAP_PQ/nmin_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y50          FDRE (Prop_fdre_C_Q)         0.141     1.664 r  CORE/U_HEAP_PQ/nmin_reg[3]/Q
-                         net (fo=3, routed)           0.122     1.786    CORE/U_HEAP_PQ/nmin[3]
-    SLICE_X4Y50          LUT6 (Prop_lut6_I4_O)        0.045     1.831 r  CORE/U_HEAP_PQ/ni[3]_i_1/O
-                         net (fo=1, routed)           0.000     1.831    CORE/U_HEAP_PQ/ni[3]_i_1_n_0
-    SLICE_X4Y50          FDRE                                         r  CORE/U_HEAP_PQ/ni_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.699     1.136    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.875     2.040    CORE/U_HEAP_PQ/CLK
-    SLICE_X4Y50          FDRE                                         r  CORE/U_HEAP_PQ/ni_reg[3]/C
-                         clock pessimism             -0.503     1.536    
-    SLICE_X4Y50          FDRE (Hold_fdre_C_D)         0.092     1.628    CORE/U_HEAP_PQ/ni_reg[3]
-  -------------------------------------------------------------------
-                         required time                         -1.628    
-                         arrival time                           1.831    
-  -------------------------------------------------------------------
-                         slack                                  0.203    
-
-Slack (MET) :             0.211ns  (arrival time - required time)
-  Source:                 CORE/U_HEAP_PQ/kvo_reg[key][1]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Destination:            CORE/AUTO/COMPCOUNT/FF1/q_reg[1]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.321ns  (logic 0.141ns (43.906%)  route 0.180ns (56.094%))
+  Data Path Delay:        0.266ns  (logic 0.141ns (52.995%)  route 0.125ns (47.005%))
   Logic Levels:           0  
   Clock Path Skew:        0.040ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.042ns
-    Source Clock Delay      (SCD):    1.522ns
-    Clock Pessimism Removal (CPR):    0.479ns
+    Destination Clock Delay (DCD):    2.112ns
+    Source Clock Delay      (SCD):    1.589ns
+    Clock Pessimism Removal (CPR):    0.483ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -1415,12 +918,12 @@ Slack (MET) :             0.211ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.603     1.522    CORE/U_HEAP_PQ/CLK
-    SLICE_X5Y56          FDRE                                         r  CORE/U_HEAP_PQ/kvo_reg[key][1]/C
+                         net (fo=393, routed)         0.669     1.589    CORE/AUTO/COMPCOUNT/FF1/clk_IBUF_BUFG
+    SLICE_X5Y43          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X5Y56          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  CORE/U_HEAP_PQ/kvo_reg[key][1]/Q
-                         net (fo=2, routed)           0.180     1.843    CORE/AUTO/COMPCOUNT/FF1/q_reg[7]_0[1]
-    SLICE_X3Y56          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[1]/D
+    SLICE_X5Y43          FDRE (Prop_fdre_C_Q)         0.141     1.730 r  CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/Q
+                         net (fo=3, routed)           0.125     1.855    CORE/AUTO/COMPCOUNT/FF2/D[3]
+    SLICE_X3Y43          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF2/q_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1430,15 +933,461 @@ Slack (MET) :             0.211ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=172, routed)         0.877     2.042    CORE/AUTO/COMPCOUNT/FF1/CLK
-    SLICE_X3Y56          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[1]/C
-                         clock pessimism             -0.479     1.562    
-    SLICE_X3Y56          FDRE (Hold_fdre_C_D)         0.070     1.632    CORE/AUTO/COMPCOUNT/FF1/q_reg[1]
+                         net (fo=393, routed)         0.947     2.112    CORE/AUTO/COMPCOUNT/FF2/clk_IBUF_BUFG
+    SLICE_X3Y43          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF2/q_reg[3]/C
+                         clock pessimism             -0.483     1.629    
+    SLICE_X3Y43          FDRE (Hold_fdre_C_D)         0.070     1.699    CORE/AUTO/COMPCOUNT/FF2/q_reg[3]
   -------------------------------------------------------------------
-                         required time                         -1.632    
-                         arrival time                           1.843    
+                         required time                         -1.699    
+                         arrival time                           1.855    
   -------------------------------------------------------------------
-                         slack                                  0.211    
+                         slack                                  0.156    
+
+Slack (MET) :             0.157ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/opArray_reg[4][kv][key][1]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[4].I_LEQ/in_reg_reg[key][1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.240ns  (logic 0.141ns (58.691%)  route 0.099ns (41.309%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.098ns
+    Source Clock Delay      (SCD):    1.579ns
+    Clock Pessimism Removal (CPR):    0.506ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.659     1.579    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X5Y28          FDSE                                         r  CORE/U_PHEAP/opArray_reg[4][kv][key][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y28          FDSE (Prop_fdse_C_Q)         0.141     1.720 r  CORE/U_PHEAP/opArray_reg[4][kv][key][1]/Q
+                         net (fo=1, routed)           0.099     1.819    CORE/U_PHEAP/genHeap[4].I_LEQ/in_reg_reg[key][7]_0[1]
+    SLICE_X7Y27          FDRE                                         r  CORE/U_PHEAP/genHeap[4].I_LEQ/in_reg_reg[key][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.933     2.098    CORE/U_PHEAP/genHeap[4].I_LEQ/clk_IBUF_BUFG
+    SLICE_X7Y27          FDRE                                         r  CORE/U_PHEAP/genHeap[4].I_LEQ/in_reg_reg[key][1]/C
+                         clock pessimism             -0.506     1.592    
+    SLICE_X7Y27          FDRE (Hold_fdre_C_D)         0.070     1.662    CORE/U_PHEAP/genHeap[4].I_LEQ/in_reg_reg[key][1]
+  -------------------------------------------------------------------
+                         required time                         -1.662    
+                         arrival time                           1.819    
+  -------------------------------------------------------------------
+                         slack                                  0.157    
+
+Slack (MET) :             0.160ns  (arrival time - required time)
+  Source:                 CORE/AUTO/COMPCOUNT/FF1/q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/AUTO/COMPCOUNT/FF2/q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.266ns  (logic 0.141ns (52.995%)  route 0.125ns (47.005%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.040ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.112ns
+    Source Clock Delay      (SCD):    1.589ns
+    Clock Pessimism Removal (CPR):    0.483ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.669     1.589    CORE/AUTO/COMPCOUNT/FF1/clk_IBUF_BUFG
+    SLICE_X5Y43          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF1/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y43          FDRE (Prop_fdre_C_Q)         0.141     1.730 r  CORE/AUTO/COMPCOUNT/FF1/q_reg[2]/Q
+                         net (fo=3, routed)           0.125     1.855    CORE/AUTO/COMPCOUNT/FF2/D[2]
+    SLICE_X3Y43          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF2/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.947     2.112    CORE/AUTO/COMPCOUNT/FF2/clk_IBUF_BUFG
+    SLICE_X3Y43          FDRE                                         r  CORE/AUTO/COMPCOUNT/FF2/q_reg[2]/C
+                         clock pessimism             -0.483     1.629    
+    SLICE_X3Y43          FDRE (Hold_fdre_C_D)         0.066     1.695    CORE/AUTO/COMPCOUNT/FF2/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.695    
+                         arrival time                           1.855    
+  -------------------------------------------------------------------
+                         slack                                  0.160    
+
+Slack (MET) :             0.162ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/genHeap[2].I_LEQ/in_reg_reg[value][3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/opArray_reg[3][kv][value][3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.296ns  (logic 0.186ns (62.736%)  route 0.110ns (37.264%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.102ns
+    Source Clock Delay      (SCD):    1.583ns
+    Clock Pessimism Removal (CPR):    0.506ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.663     1.583    CORE/U_PHEAP/genHeap[2].I_LEQ/clk_IBUF_BUFG
+    SLICE_X4Y32          FDRE                                         r  CORE/U_PHEAP/genHeap[2].I_LEQ/in_reg_reg[value][3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y32          FDRE (Prop_fdre_C_Q)         0.141     1.724 r  CORE/U_PHEAP/genHeap[2].I_LEQ/in_reg_reg[value][3]/Q
+                         net (fo=2, routed)           0.110     1.834    CORE/U_PHEAP/genHeap[2].I_LEQ/in_reg_reg[value][3]
+    SLICE_X6Y31          LUT6 (Prop_lut6_I5_O)        0.045     1.879 r  CORE/U_PHEAP/genHeap[2].I_LEQ/opArray[3][kv][value][3]_i_1/O
+                         net (fo=1, routed)           0.000     1.879    CORE/U_PHEAP/genHeap[2].I_LEQ_n_6
+    SLICE_X6Y31          FDRE                                         r  CORE/U_PHEAP/opArray_reg[3][kv][value][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.937     2.102    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X6Y31          FDRE                                         r  CORE/U_PHEAP/opArray_reg[3][kv][value][3]/C
+                         clock pessimism             -0.506     1.596    
+    SLICE_X6Y31          FDRE (Hold_fdre_C_D)         0.121     1.717    CORE/U_PHEAP/opArray_reg[3][kv][value][3]
+  -------------------------------------------------------------------
+                         required time                         -1.717    
+                         arrival time                           1.879    
+  -------------------------------------------------------------------
+                         slack                                  0.162    
+
+Slack (MET) :             0.164ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/genHeap[7].I_LEQ/in_reg_reg[value][5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/level_ram_reg/DIADI[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.519ns  (logic 0.186ns (35.837%)  route 0.333ns (64.163%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.059ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.123ns
+    Source Clock Delay      (SCD):    1.560ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.640     1.560    CORE/U_PHEAP/genHeap[7].I_LEQ/clk_IBUF_BUFG
+    SLICE_X9Y41          FDRE                                         r  CORE/U_PHEAP/genHeap[7].I_LEQ/in_reg_reg[value][5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y41          FDRE (Prop_fdre_C_Q)         0.141     1.701 r  CORE/U_PHEAP/genHeap[7].I_LEQ/in_reg_reg[value][5]/Q
+                         net (fo=2, routed)           0.155     1.855    CORE/U_PHEAP/genHeap[7].I_LEQ/in_reg_reg[value][5]
+    SLICE_X9Y43          LUT6 (Prop_lut6_I0_O)        0.045     1.900 r  CORE/U_PHEAP/genHeap[7].I_LEQ/level_ram_reg_i_18__4/O
+                         net (fo=1, routed)           0.178     2.079    CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/DIADI[7]
+    RAMB36_X0Y8          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/level_ram_reg/DIADI[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.958     2.123    CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/clk_IBUF_BUFG
+    RAMB36_X0Y8          RAMB36E1                                     r  CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+                         clock pessimism             -0.504     1.619    
+    RAMB36_X0Y8          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_DIADI[14])
+                                                      0.296     1.915    CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/level_ram_reg
+  -------------------------------------------------------------------
+                         required time                         -1.915    
+                         arrival time                           2.079    
+  -------------------------------------------------------------------
+                         slack                                  0.164    
+
+Slack (MET) :             0.167ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/opArray_reg[5][kv][key][0]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.069ns
+    Source Clock Delay      (SCD):    1.551ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.631     1.551    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X9Y27          FDSE                                         r  CORE/U_PHEAP/opArray_reg[5][kv][key][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y27          FDSE (Prop_fdse_C_Q)         0.141     1.692 r  CORE/U_PHEAP/opArray_reg[5][kv][key][0]/Q
+                         net (fo=1, routed)           0.110     1.802    CORE/U_PHEAP/genHeap[5].I_LEQ/D[0]
+    SLICE_X9Y28          FDRE                                         r  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.904     2.069    CORE/U_PHEAP/genHeap[5].I_LEQ/clk_IBUF_BUFG
+    SLICE_X9Y28          FDRE                                         r  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][0]/C
+                         clock pessimism             -0.504     1.565    
+    SLICE_X9Y28          FDRE (Hold_fdre_C_D)         0.070     1.635    CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][0]
+  -------------------------------------------------------------------
+                         required time                         -1.635    
+                         arrival time                           1.802    
+  -------------------------------------------------------------------
+                         slack                                  0.167    
+
+Slack (MET) :             0.168ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/opArray_reg[5][kv][key][6]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.253ns  (logic 0.141ns (55.730%)  route 0.112ns (44.270%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.070ns
+    Source Clock Delay      (SCD):    1.551ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.631     1.551    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X13Y28         FDSE                                         r  CORE/U_PHEAP/opArray_reg[5][kv][key][6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y28         FDSE (Prop_fdse_C_Q)         0.141     1.692 r  CORE/U_PHEAP/opArray_reg[5][kv][key][6]/Q
+                         net (fo=1, routed)           0.112     1.804    CORE/U_PHEAP/genHeap[5].I_LEQ/D[6]
+    SLICE_X13Y29         FDRE                                         r  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.905     2.070    CORE/U_PHEAP/genHeap[5].I_LEQ/clk_IBUF_BUFG
+    SLICE_X13Y29         FDRE                                         r  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][6]/C
+                         clock pessimism             -0.504     1.566    
+    SLICE_X13Y29         FDRE (Hold_fdre_C_D)         0.070     1.636    CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][6]
+  -------------------------------------------------------------------
+                         required time                         -1.636    
+                         arrival time                           1.804    
+  -------------------------------------------------------------------
+                         slack                                  0.168    
+
+Slack (MET) :             0.170ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/opArray_reg[8][kv][key][5]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.260ns  (logic 0.141ns (54.223%)  route 0.119ns (45.777%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.038ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.081ns
+    Source Clock Delay      (SCD):    1.560ns
+    Clock Pessimism Removal (CPR):    0.483ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.640     1.560    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X16Y45         FDSE                                         r  CORE/U_PHEAP/opArray_reg[8][kv][key][5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y45         FDSE (Prop_fdse_C_Q)         0.141     1.701 r  CORE/U_PHEAP/opArray_reg[8][kv][key][5]/Q
+                         net (fo=1, routed)           0.119     1.820    CORE/U_PHEAP/genHeap[8].I_LEQ/D[5]
+    SLICE_X14Y46         FDRE                                         r  CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.916     2.081    CORE/U_PHEAP/genHeap[8].I_LEQ/clk_IBUF_BUFG
+    SLICE_X14Y46         FDRE                                         r  CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][5]/C
+                         clock pessimism             -0.483     1.598    
+    SLICE_X14Y46         FDRE (Hold_fdre_C_D)         0.052     1.650    CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][5]
+  -------------------------------------------------------------------
+                         required time                         -1.650    
+                         arrival time                           1.820    
+  -------------------------------------------------------------------
+                         slack                                  0.170    
+
+Slack (MET) :             0.174ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/opArray_reg[3][kv][key][7]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[3].I_LEQ/in_reg_reg[key][7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.256ns  (logic 0.141ns (55.026%)  route 0.115ns (44.974%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.098ns
+    Source Clock Delay      (SCD):    1.580ns
+    Clock Pessimism Removal (CPR):    0.506ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.660     1.580    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X5Y29          FDSE                                         r  CORE/U_PHEAP/opArray_reg[3][kv][key][7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y29          FDSE (Prop_fdse_C_Q)         0.141     1.721 r  CORE/U_PHEAP/opArray_reg[3][kv][key][7]/Q
+                         net (fo=1, routed)           0.115     1.836    CORE/U_PHEAP/genHeap[3].I_LEQ/D[7]
+    SLICE_X5Y27          FDRE                                         r  CORE/U_PHEAP/genHeap[3].I_LEQ/in_reg_reg[key][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.933     2.098    CORE/U_PHEAP/genHeap[3].I_LEQ/clk_IBUF_BUFG
+    SLICE_X5Y27          FDRE                                         r  CORE/U_PHEAP/genHeap[3].I_LEQ/in_reg_reg[key][7]/C
+                         clock pessimism             -0.506     1.592    
+    SLICE_X5Y27          FDRE (Hold_fdre_C_D)         0.070     1.662    CORE/U_PHEAP/genHeap[3].I_LEQ/in_reg_reg[key][7]
+  -------------------------------------------------------------------
+                         required time                         -1.662    
+                         arrival time                           1.836    
+  -------------------------------------------------------------------
+                         slack                                  0.174    
+
+Slack (MET) :             0.178ns  (arrival time - required time)
+  Source:                 CORE/U_PHEAP/opArray_reg[8][kv][key][7]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.812%)  route 0.116ns (45.188%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.081ns
+    Source Clock Delay      (SCD):    1.561ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.641     1.561    CORE/U_PHEAP/clk_IBUF_BUFG
+    SLICE_X15Y44         FDSE                                         r  CORE/U_PHEAP/opArray_reg[8][kv][key][7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y44         FDSE (Prop_fdse_C_Q)         0.141     1.702 r  CORE/U_PHEAP/opArray_reg[8][kv][key][7]/Q
+                         net (fo=1, routed)           0.116     1.818    CORE/U_PHEAP/genHeap[8].I_LEQ/D[7]
+    SLICE_X14Y46         FDRE                                         r  CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=393, routed)         0.916     2.081    CORE/U_PHEAP/genHeap[8].I_LEQ/clk_IBUF_BUFG
+    SLICE_X14Y46         FDRE                                         r  CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][7]/C
+                         clock pessimism             -0.504     1.577    
+    SLICE_X14Y46         FDRE (Hold_fdre_C_D)         0.063     1.640    CORE/U_PHEAP/genHeap[8].I_LEQ/in_reg_reg[key][7]
+  -------------------------------------------------------------------
+                         required time                         -1.640    
+                         arrival time                           1.818    
+  -------------------------------------------------------------------
+                         slack                                  0.178    
 
 
 
@@ -1451,37 +1400,37 @@ Waveform(ns):       { 0.000 7.000 }
 Period(ns):         14.000
 Sources:            { clk }
 
-Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB18_X0Y22    CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg/CLKARDCLK
-Min Period        n/a     BUFG/I              n/a            2.155         14.000      11.845     BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[0]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X3Y56     CORE/AUTO/COMPCOUNT/FF1/q_reg[1]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[2]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[4]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X3Y56     CORE/AUTO/COMPCOUNT/FF1/q_reg[5]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[6]/C
-Min Period        n/a     FDRE/C              n/a            1.000         14.000      13.000     SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[7]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y56    CORE/U_HEAP_PQ/i_kv_reg[value][7]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y55    CORE/U_HEAP_PQ/j_kv_reg[key][3]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X9Y57     CORE/U_HEAP_PQ/j_kv_reg[key][4]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X9Y57     CORE/U_HEAP_PQ/j_kv_reg[value][4]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X9Y58     CORE/U_HEAP_PQ/min_kv_reg[key][0]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X10Y55    CORE/U_HEAP_PQ/min_kv_reg[key][3]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X8Y57     CORE/U_HEAP_PQ/min_kv_reg[key][4]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X10Y55    CORE/U_HEAP_PQ/min_kv_reg[key][5]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X10Y56    CORE/U_HEAP_PQ/min_kv_reg[key][7]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X10Y56    CORE/U_HEAP_PQ/min_kv_reg[value][7]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y65     sDB/count_reg[0]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y65     sDB/count_reg[2]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y65     sDB/count_reg[3]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y66     sDB/count_reg[4]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y66     sDB/count_reg[5]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y66     sDB/count_reg[6]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y66     sDB/count_reg[7]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X0Y65     sDB/count_reg[1]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[0]/C
-High Pulse Width  Fast    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X4Y57     CORE/AUTO/COMPCOUNT/FF1/q_reg[0]/C
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y6   CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y6   CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y3   CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y3   CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y9   CORE/U_PHEAP/genHeap[8].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y9   CORE/U_PHEAP/genHeap[8].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y5   CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y5   CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y4   CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y4   CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg/CLKBWRCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X9Y21   CORE/U_PHEAP/genHeap[4].I_SHIFTER/pos_out_reg[1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X9Y28   CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][0]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y30  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y30  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][2]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y30  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][3]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y30  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][4]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X11Y30  CORE/U_PHEAP/genHeap[5].I_LEQ/in_reg_reg[key][5]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X8Y21   CORE/U_PHEAP/genHeap[5].I_SHIFTER/pos_out_reg[2]/C
+Low Pulse Width   Slow    FDSE/C              n/a            0.500         7.000       6.500      SLICE_X3Y30   CORE/U_PHEAP/opArray_reg[3][kv][key][5]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X6Y31   CORE/U_PHEAP/opArray_reg[3][kv][value][3]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X5Y43   CORE/AUTO/COMPCOUNT/FF1/q_reg[0]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X5Y43   CORE/AUTO/COMPCOUNT/FF1/q_reg[1]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X5Y43   CORE/AUTO/COMPCOUNT/FF1/q_reg[2]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X5Y43   CORE/AUTO/COMPCOUNT/FF1/q_reg[3]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X4Y43   CORE/AUTO/COMPCOUNT/FF1/q_reg[4]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X4Y43   CORE/AUTO/COMPCOUNT/FF1/q_reg[7]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X4Y43   CORE/AUTO/COMPCOUNT/FF2/q_reg[1]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X4Y43   CORE/AUTO/COMPCOUNT/FF2/q_reg[4]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X2Y37   SEVENSEG/U_ENB/q_reg[0]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         7.000       6.500      SLICE_X2Y39   SEVENSEG/U_ENB/q_reg[10]/C
 
 
 

@@ -25,7 +25,7 @@ module core_sim;
     logic clk, rst, start;
     logic [7:0] data1, data2;
     logic [2:0] red, green, blue;
-    logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY;
+    logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY, toDisplay;
     
     high_level DUV (.clk, .rst, .start, .data1, .data2, .red, .green, .blue,
                     .sigIDLE, .sigSTART, .sigADD, .sigREMOVE, .sigDISPLAY, .sigFULL, .sigEMPTY);

@@ -21,10 +21,10 @@
 import pq_pkg::*;
 
 module auto_top(pq_if.client ti,
-                input logic start,
+                input logic start, 
                 output logic [2:0] color_r, color_g, color_b,
                 output logic [7:0] data1, data2,
-                output logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY);
+                output logic sigIDLE, sigSTART, sigADD, sigREMOVE, sigDISPLAY, sigFULL, sigEMPTY, toDisplay);
                 
                 logic [15:0] kvo_logic;
                 logic [7:0] kvi_logic;
@@ -35,6 +35,7 @@ module auto_top(pq_if.client ti,
                 
                 assign clk = ti.clk;
                 
+                //assign toDisplay = (kvo_logic == 8'b11111110);
                 
                 // WIRES
                 logic full, empty, busy, enq, deq;
@@ -44,6 +45,7 @@ module auto_top(pq_if.client ti,
                 logic [3:0] counter2comp;
                 logic error_comp;
                 logic rst;
+                logic [7:0] INVkvi;
                 
                 assign data1 = kvo_logic[15:8];
                 assign data2 = kvo_logic[7:0];
@@ -59,12 +61,13 @@ module auto_top(pq_if.client ti,
                 assign ti.deq = deq && !empty;
                 
                 
-                fsm_pq FSM (.clk, .rst, .start, .full, .busy, .empty, .error_comp, .cteal_15,
+                fsm_pq FSM (.clk, .rst, .start, .full, .busy, .empty, .error_comp, .cteal_15, .toDisplay,
                             .lfsr_rst, .lfsr_enb, .enq, .deq, .count_enb, .count_rst, .led_r(color_r), .led_g(color_g), .led_b(color_b),
                             .sigIDLE, .sigSTART, .sigADD, .sigREMOVE, .sigDISPLAY);
                             
-                lfsr LFSR (.rst(lfsr_rst), .clk, .enb(lfsr_enb), .q(kvi_logic)); 
+                lfsr LFSR (.rst(lfsr_rst), .clk, .enb(lfsr_enb), .q(INVkvi)); 
                 
+                assign kvi_logic = ~INVkvi;
 
                 assign kvi = kv_t' {kvi_logic, kvi_logic};
                 assign ti.kvi = kvi;

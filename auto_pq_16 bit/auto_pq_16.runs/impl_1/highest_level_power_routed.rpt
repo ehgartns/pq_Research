@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Jul 25 14:34:38 2022
+| Date             : Mon Aug  1 15:37:31 2022
 | Host             : ECE419-92QW0Q2 running 64-bit major release  (build 9200)
 | Command          : report_power -file highest_level_power_routed.rpt -pb highest_level_power_summary_routed.pb -rpx highest_level_power_routed.rpx
 | Design           : highest_level
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.101        |
+| Total On-Chip Power (W)  | 0.121        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
+| Dynamic (W)              | 0.023        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      519 |       --- |             --- |
-|   LUT as Logic |     0.001 |      234 |     63400 |            0.37 |
-|   Register     |    <0.001 |      173 |    126800 |            0.14 |
-|   CARRY4       |    <0.001 |       18 |     15850 |            0.11 |
-|   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |     0.001 |      402 |       --- |             --- |
-| Block RAM      |    <0.001 |      0.5 |       135 |            0.37 |
-| I/O            |    <0.001 |       29 |       210 |           13.81 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1815 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     1152 |     63400 |            1.82 |
+|   Register     |    <0.001 |      379 |    126800 |            0.30 |
+|   CARRY4       |    <0.001 |       35 |     15850 |            0.22 |
+|   Others       |     0.000 |       43 |       --- |             --- |
+| Signals        |    <0.001 |     1804 |       --- |             --- |
+| Block RAM      |     0.018 |        7 |       135 |            5.19 |
+| I/O            |     0.002 |       29 |       210 |           13.81 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.101 |          |           |                 |
+| Total          |     0.121 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,16 +72,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.035 |       0.020 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.002 |       0.002 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -138,13 +138,19 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------+-----------+
-| Name            | Power (W) |
-+-----------------+-----------+
-| highest_level   |     0.004 |
-|   CORE          |     0.003 |
-|     U_HEAP_PQ   |     0.003 |
-|       U_HEAPMEM |     0.002 |
-+-----------------+-----------+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| highest_level            |     0.023 |
+|   CORE                   |     0.021 |
+|     U_PHEAP              |     0.020 |
+|       genHeap[2].I_LEVEL |     0.003 |
+|       genHeap[3].I_LEVEL |     0.003 |
+|       genHeap[4].I_LEVEL |     0.003 |
+|       genHeap[5].I_LEVEL |     0.003 |
+|       genHeap[6].I_LEVEL |     0.003 |
+|       genHeap[7].I_LEVEL |     0.003 |
+|       genHeap[8].I_LEVEL |     0.003 |
++--------------------------+-----------+
 
 

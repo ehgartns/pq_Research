@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1657217465">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1659381161">
   <File Type="PA-TCL" Name="ra_pq_s_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ra_pq_s_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ra_pq_s_wrapper_reports.tcl"/>
@@ -116,7 +116,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/ra_pq_mux2.sv">
+    <File Path="$PPRDIR/ra_pq_s_top.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -132,7 +132,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/ra_pq_s_top.sv">
+    <File Path="$PPRDIR/ra_pq_mux2.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

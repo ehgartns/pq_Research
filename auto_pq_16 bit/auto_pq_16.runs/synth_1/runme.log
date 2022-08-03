@@ -10,7 +10,6 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source highest_level.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.930 ; gain = 0.000
 Command: synth_design -top highest_level -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -18,44 +17,159 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3548
+INFO: [Synth 8-7075] Helper process launched with PID 7704
+WARNING: [Synth 8-2507] parameter declaration becomes local in levelRam with formal parameter declaration list [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in levelRam with formal parameter declaration list [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in levelRam with formal parameter declaration list [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:19]
+WARNING: [Synth 8-2507] parameter declaration becomes local in levelRam with formal parameter declaration list [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:21]
+WARNING: [Synth 8-2507] parameter declaration becomes local in levelRam with formal parameter declaration list [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:22]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1140.883 ; gain = 60.953
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1140.398 ; gain = 52.355
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'highest_level' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/highest_level.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/debounce.sv:13]
-	Parameter CLKPD_NS bound to: 10 - type: integer 
-	Parameter CLKFREQ bound to: 100000000 - type: integer 
-	Parameter DEBOUNCE_MS bound to: 10 - type: integer 
-	Parameter CTRBITS bound to: 20 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/debounce.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'single_pulser' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/single_pulser.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'single_pulser' (2#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/single_pulser.sv:12]
 INFO: [Synth 8-6157] synthesizing module 'high_level' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/high_level.sv:24]
 INFO: [Synth 8-6157] synthesizing module 'pq_if' [C:/Users/ehgartns/Documents/new_pq_repo/pq_if.sv:14]
-INFO: [Synth 8-6155] done synthesizing module 'pq_if' (2#1) [C:/Users/ehgartns/Documents/new_pq_repo/pq_if.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'pq_if' (0#1) [C:/Users/ehgartns/Documents/new_pq_repo/pq_if.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'pq_rd_if' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/pq_rd_if.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'pq_rd_if' (0#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/pq_rd_if.sv:13]
 INFO: [Synth 8-6157] synthesizing module 'auto_top' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/auto_top.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'fsm_pq' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv:62]
-INFO: [Synth 8-6155] done synthesizing module 'fsm_pq' (3#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_pq' (1#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'lfsr' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/lfsr.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'lfsr' (4#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/lfsr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr' (2#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/lfsr.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'compcounter' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'flip_flop' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/flip_flop.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'flip_flop' (5#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/flip_flop.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'compcounter' (6#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'auto_top' (7#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/auto_top.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'heap_pq' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/heap_pq.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'mem_swsr' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/mem_swsr.sv:15]
-	Parameter W bound to: 16 - type: integer 
-	Parameter D bound to: 256 - type: integer 
-	Parameter DW bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mem_swsr' (8#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/mem_swsr.sv:15]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/heap_pq.sv:118]
-INFO: [Synth 8-6155] done synthesizing module 'heap_pq' (9#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/heap_pq.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'high_level' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/high_level.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'flip_flop' (3#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/flip_flop.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'compcounter' (4#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'auto_top' (5#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/auto_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'pheap_pq' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheap_pq.sv:14]
+WARNING: [Synth 8-2898] ignoring assertion [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheap_pq.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'leq1' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq1.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'leq1' (6#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq1.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'level' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 2 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 2 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 1 - type: integer 
+	Parameter END_LOC bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam' (7#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level' (8#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq' (9#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'level__parameterized0' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam__parameterized0' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 3 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 4 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 3 - type: integer 
+	Parameter END_LOC bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam__parameterized0' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level__parameterized0' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq__parameterized0' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq__parameterized0' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter__parameterized0' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter__parameterized0' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'level__parameterized1' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam__parameterized1' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 4 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 8 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 7 - type: integer 
+	Parameter END_LOC bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam__parameterized1' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level__parameterized1' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq__parameterized1' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq__parameterized1' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter__parameterized1' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter__parameterized1' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'level__parameterized2' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam__parameterized2' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 5 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 16 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 15 - type: integer 
+	Parameter END_LOC bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam__parameterized2' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level__parameterized2' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq__parameterized2' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq__parameterized2' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter__parameterized2' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter__parameterized2' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'level__parameterized3' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam__parameterized3' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 6 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 32 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 31 - type: integer 
+	Parameter END_LOC bound to: 62 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam__parameterized3' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level__parameterized3' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq__parameterized3' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq__parameterized3' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter__parameterized3' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter__parameterized3' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'level__parameterized4' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam__parameterized4' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 7 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 64 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 63 - type: integer 
+	Parameter END_LOC bound to: 126 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam__parameterized4' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level__parameterized4' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq__parameterized4' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq__parameterized4' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter__parameterized4' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter__parameterized4' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'level__parameterized5' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+	Parameter LEVEL bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'levelRam__parameterized5' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+	Parameter RAMLEVEL bound to: 8 - type: integer 
+	Parameter RAM_WIDTH bound to: 25 - type: integer 
+	Parameter RAM_DEPTH bound to: 128 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter START_LOC bound to: 127 - type: integer 
+	Parameter END_LOC bound to: 254 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'levelRam__parameterized5' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'level__parameterized5' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'leq__parameterized5' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+	Parameter LEVEL bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'leq__parameterized5' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'level_shifter__parameterized5' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+	Parameter LEVEL bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'level_shifter__parameterized5' (10#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'pheap_pq' (11#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheap_pq.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'high_level' (12#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/high_level.sv:24]
 INFO: [Synth 8-6157] synthesizing module 'rgb_pwm' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/rgb_pwm.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'rgb_pwm' (11#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/rgb_pwm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_pwm' (13#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/rgb_pwm.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'sevenseg_ctl' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ctl.sv:18]
 INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/period_enb.sv:20]
 	Parameter PERIOD_MS bound to: 1 - type: integer 
@@ -65,34 +179,35 @@ INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/ehgartns/Documen
 	Parameter CLKPD_NS bound to: 10 - type: integer 
 	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
 	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'period_enb' (12#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/period_enb.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (14#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/period_enb.sv:20]
 INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/counter.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (13#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (15#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/counter.sv:23]
 WARNING: [Synth 8-689] width (3) of port connection 'q' does not match port width (4) of module 'counter' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ctl.sv:34]
 INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/dec_3_8_n.sv:23]
 INFO: [Synth 8-226] default block is never used [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/dec_3_8_n.sv:31]
-INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (14#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/dec_3_8_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (16#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/dec_3_8_n.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/mux8.sv:23]
 	Parameter W bound to: 7 - type: integer 
 INFO: [Synth 8-226] default block is never used [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/mux8.sv:28]
-INFO: [Synth 8-6155] done synthesizing module 'mux8' (15#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (17#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/mux8.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'sevenseg_ext_n' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ext_n.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ext_n' (16#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ext_n.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (17#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ctl.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'highest_level' (18#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/highest_level.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ext_n.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ext_n' (18#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ext_n.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (19#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'highest_level' (20#1) [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/highest_level.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1198.660 ; gain = 118.730
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1229.000 ; gain = 140.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.660 ; gain = 118.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1229.000 ; gain = 140.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.660 ; gain = 118.730
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1229.000 ; gain = 140.957
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1198.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1229.000 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -103,92 +218,109 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/highest_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1312.750 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1342.305 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1312.750 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1342.305 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.750 ; gain = 232.820
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1342.305 ; gain = 254.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.750 ; gain = 232.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1342.305 ; gain = 254.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.750 ; gain = 232.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1342.305 ; gain = 254.262
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_pq'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'heap_pq'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
 *
-                    IDLE |                            00001 |                            00001
-                   START |                            00010 |                            00010
-                     ADD |                            00100 |                            00100
-                  REMOVE |                            01000 |                            01000
-                 DISPLAY |                            10000 |                            10000
+                    IDLE |                           000001 |                           000001
+                   START |                           000010 |                           000010
+                     ADD |                           000100 |                           000100
+                  REMOVE |                           001000 |                           001000
+                   CHECK |                           010000 |                           010000
+                 DISPLAY |                           100000 |                           100000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'fsm_pq'
-WARNING: [Synth 8-327] inferring latch for variable 'verdict_reg' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv:40]
-WARNING: [Synth 8-327] inferring latch for variable 'cteal_15_reg' [C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv:41]
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0000 |                             0000
-              ENQ_DEQ_ST |                             0001 |                             1100
-                  ENQ_ST |                             0010 |                             0001
-                 ENQ_RDP |                             0011 |                             0010
-                 ENQ_SWP |                             0100 |                             0011
-                ENQ_SWP2 |                             0101 |                             0100
-                  DEQ_ST |                             0110 |                             0101
-                 DEQ_ST2 |                             0111 |                             0110
-                 HPFY_ST |                             1000 |                             0111
-                HPFY_RDL |                             1001 |                             1000
-                HPFY_RDR |                             1010 |                             1001
-                HPFY_SWP |                             1011 |                             1010
-               HPFY_SWP2 |                             1100 |                             1011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'heap_pq'
+INFO: [Synth 8-3971] The signal "levelRam:/level_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "levelRam__parameterized0:/level_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "levelRam__parameterized1:/level_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "levelRam__parameterized2:/level_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "levelRam__parameterized3:/level_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "levelRam__parameterized4:/level_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "levelRam__parameterized5:/level_ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1312.750 ; gain = 232.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1342.305 ; gain = 254.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    8 Bit       Adders := 2     
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 16    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
 	   4 Input      1 Bit         XORs := 1     
 +---Registers : 
-	                8 Bit    Registers := 15    
-	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 5     
+	               25 Bit    Registers := 14    
+	                8 Bit    Registers := 36    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 18    
 +---RAMs : 
-	               4K Bit	(256 X 16 bit)          RAMs := 1     
+	               3K Bit	(128 X 25 bit)          RAMs := 1     
+	               1K Bit	(64 X 25 bit)          RAMs := 1     
+	              800 Bit	(32 X 25 bit)          RAMs := 1     
+	              400 Bit	(16 X 25 bit)          RAMs := 1     
+	              200 Bit	(8 X 25 bit)          RAMs := 1     
+	              100 Bit	(4 X 25 bit)          RAMs := 1     
+	               50 Bit	(2 X 25 bit)          RAMs := 1     
 +---Muxes : 
-	   2 Input    8 Bit        Muxes := 7     
-	  13 Input    8 Bit        Muxes := 10    
+	   2 Input   25 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 303   
+	   4 Input    8 Bit        Muxes := 33    
+	   3 Input    8 Bit        Muxes := 7     
 	   8 Input    8 Bit        Muxes := 1     
-	  17 Input    7 Bit        Muxes := 1     
-	   6 Input    5 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 11    
-	  13 Input    4 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 2     
-	   6 Input    2 Bit        Muxes := 2     
-	   6 Input    1 Bit        Muxes := 9     
-	  13 Input    1 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 14    
+	   4 Input    7 Bit        Muxes := 1     
+	  18 Input    7 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 16    
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 15    
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 16    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 14    
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 22    
+	   7 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 8     
+	   4 Input    2 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 134   
+	   3 Input    1 Bit        Muxes := 19    
+	   4 Input    1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -204,22 +336,25 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-RAM Pipeline Warning: Read Address Register Found For RAM CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg. We will not be able to pipeline it. This may degrade performance. 
-RAM Pipeline Warning: Read Address Register Found For RAM CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg. We will not be able to pipeline it. This may degrade performance. 
-RAM Pipeline Warning: Read Address Register Found For RAM CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg. We will not be able to pipeline it. This may degrade performance. 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1312.750 ; gain = 232.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1342.305 ; gain = 254.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Preliminary Mapping	Report (see note below)
-+--------------+----------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name   | RTL Object                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+--------------+----------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|highest_level | CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg | 256 x 16(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 
-+--------------+----------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++------------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                         | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|levelRam:                           | level_ram_reg       | 2 x 25(NO_CHANGE)      | W | R | 2 x 25(NO_CHANGE)      | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized0:           | level_ram_reg       | 4 x 25(NO_CHANGE)      | W | R | 4 x 25(NO_CHANGE)      | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized1:           | level_ram_reg       | 8 x 25(NO_CHANGE)      | W | R | 8 x 25(NO_CHANGE)      | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized2:           | level_ram_reg       | 16 x 25(NO_CHANGE)     | W | R | 16 x 25(NO_CHANGE)     | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized3:           | level_ram_reg       | 32 x 25(NO_CHANGE)     | W | R | 32 x 25(NO_CHANGE)     | W | R | Port A and B     | 0      | 1      | 
+|\CORE/U_PHEAP /\genHeap[7].I_LEVEL  | U_RAM/level_ram_reg | 64 x 25(NO_CHANGE)     | W | R | 64 x 25(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|\CORE/U_PHEAP /\genHeap[8].I_LEVEL  | U_RAM/level_ram_reg | 128 x 25(NO_CHANGE)    | W | R | 128 x 25(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 ---------------------------------------------------------------------------------
@@ -229,24 +364,30 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1312.750 ; gain = 232.820
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1342.305 ; gain = 254.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1346.754 ; gain = 258.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Final Mapping	Report
-+--------------+----------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name   | RTL Object                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+--------------+----------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|highest_level | CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg | 256 x 16(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 
-+--------------+----------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++------------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                         | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|levelRam:                           | level_ram_reg       | 2 x 25(NO_CHANGE)      | W | R | 2 x 25(NO_CHANGE)      | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized0:           | level_ram_reg       | 4 x 25(NO_CHANGE)      | W | R | 4 x 25(NO_CHANGE)      | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized1:           | level_ram_reg       | 8 x 25(NO_CHANGE)      | W | R | 8 x 25(NO_CHANGE)      | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized2:           | level_ram_reg       | 16 x 25(NO_CHANGE)     | W | R | 16 x 25(NO_CHANGE)     | W | R | Port A and B     | 0      | 1      | 
+|levelRam__parameterized3:           | level_ram_reg       | 32 x 25(NO_CHANGE)     | W | R | 32 x 25(NO_CHANGE)     | W | R | Port A and B     | 0      | 1      | 
+|\CORE/U_PHEAP /\genHeap[7].I_LEVEL  | U_RAM/level_ram_reg | 64 x 25(NO_CHANGE)     | W | R | 64 x 25(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|\CORE/U_PHEAP /\genHeap[8].I_LEVEL  | U_RAM/level_ram_reg | 128 x 25(NO_CHANGE)    | W | R | 128 x 25(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -254,9 +395,22 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance CORE/U_HEAP_PQ/U_HEAPMEM/ram_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[2].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[3].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[4].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[8].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CORE/U_PHEAP/genHeap[8].I_LEVEL/U_RAM/level_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1399.582 ; gain = 311.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -274,37 +428,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1415.355 ; gain = 327.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1415.355 ; gain = 327.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1415.355 ; gain = 327.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1415.355 ; gain = 327.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1415.359 ; gain = 327.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1415.359 ; gain = 327.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -321,41 +475,39 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY4   |    18|
-|3     |LUT1     |     7|
-|4     |LUT2     |    14|
-|5     |LUT3     |    47|
-|6     |LUT4     |    75|
-|7     |LUT5     |    54|
-|8     |LUT6     |   112|
-|9     |RAMB18E1 |     1|
-|10    |FDRE     |   168|
-|11    |FDSE     |     3|
-|12    |LDC      |     2|
+|2     |CARRY4   |    35|
+|3     |LUT1     |     2|
+|4     |LUT2     |    29|
+|5     |LUT3     |   241|
+|6     |LUT4     |    91|
+|7     |LUT5     |   133|
+|8     |LUT6     |   862|
+|9     |RAMB36E1 |     7|
+|11    |FDRE     |   313|
+|12    |FDSE     |    66|
 |13    |IBUF     |     3|
 |14    |OBUF     |    26|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1415.359 ; gain = 327.316
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1345.543 ; gain = 151.523
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1345.543 ; gain = 265.613
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 1415.359 ; gain = 214.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1415.359 ; gain = 327.316
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1356.355 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1426.434 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1426.434 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  LDC => LDCE: 2 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+134 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 1356.355 ; gain = 276.426
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1426.434 ; gain = 338.391
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/auto_pq_16.runs/synth_1/highest_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file highest_level_utilization_synth.rpt -pb highest_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 25 14:32:46 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  1 15:35:12 2022...

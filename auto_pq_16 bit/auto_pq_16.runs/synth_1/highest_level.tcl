@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -91,21 +89,25 @@ read_verilog -library xil_defaultlib -sv {
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/auto_top.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/compcounter.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/counter.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/debounce.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/dec_3_8_n.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/flip_flop.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/heap_pq.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/high_level.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheapTypes.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq1.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/lfsr.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/heap_pq_test/heap_pq/mem_swsr.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/mux8.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/period_enb.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheap_pq.sv}
   C:/Users/ehgartns/Documents/new_pq_repo/pq_if.sv
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/pq_rd_if.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/rgb_pwm.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ctl.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ext_n.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/single_pulser.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/highest_level.sv}
 }
 OPTRACE "Adding files" END { }

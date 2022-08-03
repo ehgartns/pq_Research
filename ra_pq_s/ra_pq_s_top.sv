@@ -25,6 +25,6 @@ module ra_pq_s_top;
 
     ra_pq_s DUV(PQ_IF.dev);
 
-    ra_pq_s_tb TB(PQ_IF.tb);
+    //ra_pq_s_tb TB(PQ_IF.tb);
 
 endmodule

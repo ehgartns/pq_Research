@@ -5,11 +5,17 @@ sv xil_defaultlib  \
 "../../../../RTL/compcounter.sv" \
 "../../../../RTL/flip_flop.sv" \
 "../../../../RTL/fsm_pq.sv" \
-"../../../../heap_pq_test/heap_pq/heap_pq.sv" \
 "../../../../RTL/high_level.sv" \
+"../../../../pheap_pq test/leq.sv" \
+"../../../../pheap_pq test/leq1.sv" \
+"../../../../pheap_pq test/level.sv" \
+"../../../../pheap_pq test/levelRam.sv" \
+"../../../../pheap_pq test/level_shifter.sv" \
 "../../../../RTL/lfsr.sv" \
-"../../../../heap_pq_test/heap_pq/mem_swsr.sv" \
+"../../../../pheap_pq test/pheapTypes.sv" \
+"../../../../pheap_pq test/pheap_pq.sv" \
 "../../../../../pq_if.sv" \
+"../../../../RTL/pq_rd_if.sv" \
 "../../../../RTL/core_sim.sv" \
 
 # compile glbl module

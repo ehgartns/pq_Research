@@ -34,19 +34,23 @@ module high_level(input logic clk, rst, start,
                   
                   logic [15:0] kvo_logic;
                   
+                  logic toDisplay;
                    // INTERFACE
                   
                   pq_if U_PQ_IF (.clk);
+                  pq_rd_if U_PQ_IF_RD (.clk);
                                    
                   auto_top AUTO (.ti(U_PQ_IF.client), .start, .color_r(red), .color_g(green), .color_b(blue), .data1, .data2,
-                                 .sigIDLE, .sigSTART, .sigADD, .sigREMOVE, .sigDISPLAY, .sigFULL, .sigEMPTY);
+                                 .sigIDLE, .sigSTART, .sigADD, .sigREMOVE, .sigDISPLAY, .sigFULL, .sigEMPTY, .toDisplay);
                       
                   // PRIORITY QUEUE AND INTERFACE CONNECTIONS
                   
-                  heap_pq U_HEAP_PQ(U_PQ_IF.dev);
-                  //sr_pq U_SR_PQ(U_PQ_IF.dev);
-                  //sr_pq_s U_SR_PQ_S(U_PQ_IF.dev);
+                  //heap_pq U_HEAP_PQ(U_PQ_IF.dev); //IT WORKS
+                  //sr_pq U_SR_PQ(U_PQ_IF.dev); //IT WORKS
+                  //sr_pq_s U_SR_PQ_S(U_PQ_IF.dev); //IT WORKS
+                  pheap_pq U_PHEAP(U_PQ_IF.dev); // IT WORKS 
                   //ra_pq_s U_RA_PQ_S(U_PQ_IF.dev); // Needs another interface???
+                  //ra_pq_r U_RA_PQ_R(U_PQ_IF.dev);
                   
                   assign U_PQ_IF.rst = rst;
                   /* is it really this easy? (is this really necessary?)
