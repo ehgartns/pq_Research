@@ -38,7 +38,7 @@ module high_level(input logic clk, rst, start,
                    // INTERFACE
                   
                   pq_if U_PQ_IF (.clk);
-                  pq_rd_if U_PQ_IF_RD (.clk);
+                  //pq_rd_if U_PQ_IF_RD (.clk);
                                    
                   auto_top AUTO (.ti(U_PQ_IF.client), .start, .color_r(red), .color_g(green), .color_b(blue), .data1, .data2,
                                  .sigIDLE, .sigSTART, .sigADD, .sigREMOVE, .sigDISPLAY, .sigFULL, .sigEMPTY, .toDisplay);
