@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Aug  1 15:36:28 2022
+| Date         : Wed Aug  3 13:47:26 2022
 | Host         : ECE419-92QW0Q2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file highest_level_control_sets_placed.rpt
 | Design       : highest_level
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    26 |
-|    Minimum number of control sets                        |    26 |
+| Total control sets                                       |     4 |
+|    Minimum number of control sets                        |     4 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    21 |
+| Unused register locations in slices containing registers |    10 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    26 |
+| Total control sets |     4 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     2 |
-| >= 8 to < 10       |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |    20 |
+| >= 16              |     3 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,47 +58,25 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              24 |           13 |
+| No           | No                    | No                     |               0 |            0 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             157 |           85 |
-| Yes          | No                    | No                     |             128 |           45 |
+| No           | Yes                   | No                     |            4126 |         1206 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              70 |           30 |
+| Yes          | Yes                   | No                     |              24 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |                         Enable Signal                         |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[5].I_LEVEL/U_RAM/E[0]                    | rst_IBUF                                    |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[6].I_LEVEL/U_RAM/E[0]                    | rst_IBUF                                    |                2 |              5 |         2.50 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[7].I_LEVEL/U_RAM/E[0]                    | rst_IBUF                                    |                3 |              6 |         2.00 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[8].I_LEVEL/U_RAM/E[0]                    | rst_IBUF                                    |                3 |              7 |         2.33 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[1].I_LEQ1/level_mem[capacity][7]_i_1_n_0 | rst_IBUF                                    |                5 |              8 |         1.60 |
-|  clk_IBUF_BUFG | CORE/AUTO/FSM/E[0]                                            | CORE/AUTO/FSM/SR[0]                         |                1 |              8 |         8.00 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[2].I_LEQ/done[2]_1[0]  |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[1].I_LEQ1/start_reg[1] |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[3].I_LEQ/done[3]_3[0]  |               10 |             16 |         1.60 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[4].I_LEQ/done[4]_6[0]  |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[5].I_LEQ/done[5]_7[0]  |               10 |             16 |         1.60 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[6].I_LEQ/done[6]_9[0]  |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG |                                                               | CORE/U_PHEAP/genHeap[7].I_LEQ/done[7]_11[0] |               10 |             16 |         1.60 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[2].I_LEQ/done[2]_1[0]                    |                                             |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[1].I_LEQ1/level_mem                      | rst_IBUF                                    |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[1].I_LEQ1/E[0]                           |                                             |                3 |             16 |         5.33 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[3].I_LEQ/done[3]_3[0]                    |                                             |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG | CORE/AUTO/FSM/state_reg[2]_1[0]                               | CORE/AUTO/FSM/SR[0]                         |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[4].I_LEQ/done[4]_6[0]                    |                                             |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[5].I_LEQ/done[5]_7[0]                    |                                             |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[6].I_LEQ/done[6]_9[0]                    |                                             |                8 |             16 |         2.00 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[7].I_LEQ/done[7]_11[0]                   |                                             |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG | CORE/U_PHEAP/genHeap[8].I_LEQ/p_4_out                         |                                             |                6 |             16 |         2.67 |
-|  clk_IBUF_BUFG |                                                               | SEVENSEG/U_ENB/q[0]_i_1_n_0                 |                5 |             17 |         3.40 |
-|  clk_IBUF_BUFG |                                                               |                                             |               13 |             24 |         1.85 |
-|  clk_IBUF_BUFG |                                                               | rst_IBUF                                    |               20 |             28 |         1.40 |
-+----------------+---------------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
++----------------+---------------------------------+-----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |          Enable Signal          |       Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------+-----------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | CORE/AUTO/FSM/E[0]              | CORE/AUTO/FSM/SR[0]         |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | CORE/AUTO/FSM/state_reg[2]_0[0] | CORE/AUTO/FSM/SR[0]         |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                                 | SEVENSEG/U_ENB/q[0]_i_1_n_0 |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG |                                 | rst_IBUF                    |             1201 |           4109 |         3.42 |
++----------------+---------------------------------+-----------------------------+------------------+----------------+--------------+
 
 

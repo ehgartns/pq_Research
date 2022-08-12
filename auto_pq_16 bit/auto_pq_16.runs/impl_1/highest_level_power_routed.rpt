@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Aug  1 15:37:31 2022
+| Date             : Wed Aug  3 13:49:47 2022
 | Host             : ECE419-92QW0Q2 running 64-bit major release  (build 9200)
 | Command          : report_power -file highest_level_power_routed.rpt -pb highest_level_power_summary_routed.pb -rpx highest_level_power_routed.rpx
 | Design           : highest_level
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.121        |
+| Total On-Chip Power (W)  | 0.299        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.023        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.202        |
+| Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.4         |
-| Junction Temperature (C) | 25.6         |
+| Max Ambient (C)          | 83.6         |
+| Junction Temperature (C) | 26.4         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1815 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     1152 |     63400 |            1.82 |
-|   Register     |    <0.001 |      379 |    126800 |            0.30 |
-|   CARRY4       |    <0.001 |       35 |     15850 |            0.22 |
-|   Others       |     0.000 |       43 |       --- |             --- |
-| Signals        |    <0.001 |     1804 |       --- |             --- |
-| Block RAM      |     0.018 |        7 |       135 |            5.19 |
-| I/O            |     0.002 |       29 |       210 |           13.81 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.121 |          |           |                 |
+| Clocks         |     0.017 |        3 |       --- |             --- |
+| Slice Logic    |     0.114 |    16638 |       --- |             --- |
+|   LUT as Logic |     0.110 |     6507 |     63400 |           10.26 |
+|   Register     |     0.003 |     4150 |    126800 |            3.27 |
+|   CARRY4       |    <0.001 |      261 |     15850 |            1.65 |
+|   Others       |     0.000 |      392 |       --- |             --- |
+| Signals        |     0.065 |    10617 |       --- |             --- |
+| I/O            |     0.006 |       29 |       210 |           13.81 |
+| Static Power   |     0.098 |          |           |                 |
+| Total          |     0.299 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,16 +71,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.035 |       0.020 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.211 |       0.196 |      0.016 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.002 |       0.002 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -141,16 +140,136 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| highest_level            |     0.023 |
-|   CORE                   |     0.021 |
-|     U_PHEAP              |     0.020 |
-|       genHeap[2].I_LEVEL |     0.003 |
-|       genHeap[3].I_LEVEL |     0.003 |
-|       genHeap[4].I_LEVEL |     0.003 |
-|       genHeap[5].I_LEVEL |     0.003 |
-|       genHeap[6].I_LEVEL |     0.003 |
-|       genHeap[7].I_LEVEL |     0.003 |
-|       genHeap[8].I_LEVEL |     0.003 |
+| highest_level            |     0.202 |
+|   CORE                   |     0.196 |
+|     U_RA_PQ              |     0.195 |
+|       genblk4[101].U_REG |     0.001 |
+|       genblk4[103].U_REG |     0.001 |
+|       genblk4[105].U_REG |     0.001 |
+|       genblk4[107].U_REG |     0.001 |
+|       genblk4[109].U_REG |     0.001 |
+|       genblk4[111].U_REG |     0.001 |
+|       genblk4[113].U_REG |     0.001 |
+|       genblk4[115].U_REG |     0.001 |
+|       genblk4[117].U_REG |     0.001 |
+|       genblk4[119].U_REG |     0.001 |
+|       genblk4[11].U_REG  |     0.001 |
+|       genblk4[121].U_REG |     0.001 |
+|       genblk4[123].U_REG |     0.001 |
+|       genblk4[125].U_REG |     0.001 |
+|       genblk4[127].U_REG |     0.001 |
+|       genblk4[129].U_REG |     0.001 |
+|       genblk4[131].U_REG |     0.001 |
+|       genblk4[133].U_REG |     0.001 |
+|       genblk4[135].U_REG |     0.001 |
+|       genblk4[137].U_REG |     0.001 |
+|       genblk4[139].U_REG |     0.001 |
+|       genblk4[13].U_REG  |     0.001 |
+|       genblk4[141].U_REG |     0.001 |
+|       genblk4[143].U_REG |     0.001 |
+|       genblk4[145].U_REG |     0.001 |
+|       genblk4[147].U_REG |     0.001 |
+|       genblk4[149].U_REG |     0.001 |
+|       genblk4[151].U_REG |     0.001 |
+|       genblk4[153].U_REG |     0.001 |
+|       genblk4[155].U_REG |     0.001 |
+|       genblk4[157].U_REG |     0.001 |
+|       genblk4[159].U_REG |     0.001 |
+|       genblk4[15].U_REG  |     0.001 |
+|       genblk4[161].U_REG |     0.001 |
+|       genblk4[163].U_REG |     0.001 |
+|       genblk4[165].U_REG |     0.001 |
+|       genblk4[167].U_REG |     0.001 |
+|       genblk4[169].U_REG |     0.001 |
+|       genblk4[171].U_REG |     0.001 |
+|       genblk4[173].U_REG |     0.001 |
+|       genblk4[175].U_REG |     0.001 |
+|       genblk4[177].U_REG |     0.001 |
+|       genblk4[179].U_REG |     0.001 |
+|       genblk4[17].U_REG  |     0.001 |
+|       genblk4[181].U_REG |     0.001 |
+|       genblk4[183].U_REG |     0.001 |
+|       genblk4[185].U_REG |     0.001 |
+|       genblk4[187].U_REG |     0.001 |
+|       genblk4[189].U_REG |     0.001 |
+|       genblk4[191].U_REG |     0.001 |
+|       genblk4[193].U_REG |     0.001 |
+|       genblk4[195].U_REG |     0.001 |
+|       genblk4[197].U_REG |     0.001 |
+|       genblk4[199].U_REG |     0.001 |
+|       genblk4[19].U_REG  |     0.001 |
+|       genblk4[1].U_REG   |     0.002 |
+|       genblk4[201].U_REG |     0.001 |
+|       genblk4[203].U_REG |     0.001 |
+|       genblk4[205].U_REG |     0.001 |
+|       genblk4[207].U_REG |     0.001 |
+|       genblk4[209].U_REG |     0.001 |
+|       genblk4[211].U_REG |     0.001 |
+|       genblk4[213].U_REG |     0.001 |
+|       genblk4[215].U_REG |     0.001 |
+|       genblk4[217].U_REG |     0.001 |
+|       genblk4[219].U_REG |     0.001 |
+|       genblk4[21].U_REG  |     0.001 |
+|       genblk4[221].U_REG |     0.001 |
+|       genblk4[223].U_REG |     0.001 |
+|       genblk4[225].U_REG |     0.001 |
+|       genblk4[227].U_REG |     0.001 |
+|       genblk4[229].U_REG |     0.001 |
+|       genblk4[231].U_REG |     0.001 |
+|       genblk4[233].U_REG |     0.001 |
+|       genblk4[235].U_REG |     0.001 |
+|       genblk4[237].U_REG |     0.001 |
+|       genblk4[239].U_REG |     0.001 |
+|       genblk4[23].U_REG  |     0.001 |
+|       genblk4[241].U_REG |     0.001 |
+|       genblk4[243].U_REG |     0.001 |
+|       genblk4[245].U_REG |     0.001 |
+|       genblk4[247].U_REG |     0.001 |
+|       genblk4[249].U_REG |     0.001 |
+|       genblk4[251].U_REG |     0.001 |
+|       genblk4[253].U_REG |     0.001 |
+|       genblk4[256].U_REG |     0.001 |
+|       genblk4[25].U_REG  |     0.001 |
+|       genblk4[27].U_REG  |     0.001 |
+|       genblk4[29].U_REG  |     0.001 |
+|       genblk4[31].U_REG  |     0.001 |
+|       genblk4[33].U_REG  |     0.001 |
+|       genblk4[35].U_REG  |     0.001 |
+|       genblk4[37].U_REG  |     0.001 |
+|       genblk4[39].U_REG  |     0.001 |
+|       genblk4[41].U_REG  |     0.001 |
+|       genblk4[43].U_REG  |     0.001 |
+|       genblk4[45].U_REG  |     0.001 |
+|       genblk4[47].U_REG  |     0.001 |
+|       genblk4[49].U_REG  |     0.001 |
+|       genblk4[51].U_REG  |     0.001 |
+|       genblk4[53].U_REG  |     0.001 |
+|       genblk4[55].U_REG  |     0.001 |
+|       genblk4[57].U_REG  |     0.001 |
+|       genblk4[59].U_REG  |     0.001 |
+|       genblk4[5].U_REG   |     0.001 |
+|       genblk4[61].U_REG  |     0.001 |
+|       genblk4[63].U_REG  |     0.001 |
+|       genblk4[65].U_REG  |     0.001 |
+|       genblk4[67].U_REG  |     0.001 |
+|       genblk4[69].U_REG  |     0.001 |
+|       genblk4[71].U_REG  |     0.001 |
+|       genblk4[73].U_REG  |     0.001 |
+|       genblk4[75].U_REG  |     0.001 |
+|       genblk4[77].U_REG  |     0.001 |
+|       genblk4[79].U_REG  |     0.001 |
+|       genblk4[7].U_REG   |     0.001 |
+|       genblk4[81].U_REG  |     0.001 |
+|       genblk4[83].U_REG  |     0.001 |
+|       genblk4[85].U_REG  |     0.001 |
+|       genblk4[87].U_REG  |     0.001 |
+|       genblk4[89].U_REG  |     0.001 |
+|       genblk4[91].U_REG  |     0.001 |
+|       genblk4[93].U_REG  |     0.001 |
+|       genblk4[95].U_REG  |     0.001 |
+|       genblk4[97].U_REG  |     0.001 |
+|       genblk4[99].U_REG  |     0.001 |
+|       genblk4[9].U_REG   |     0.001 |
 +--------------------------+-----------+
 
 

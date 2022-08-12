@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Aug  8 11:30:53 2022
+# Process ID: 3796
+# Current directory: C:/Users/ehgartns/Documents/new_pq_repo/QuickQ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8020 C:\Users\ehgartns\Documents\new_pq_repo\QuickQ\QuickQ_project.xpr
+# Log file: C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/vivado.log
+# Journal file: C:/Users/ehgartns/Documents/new_pq_repo/QuickQ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/QuickQ_project.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/dffe.sv w ]
+add_files C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/dffe.sv
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/mem_swsr.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/mem_swsr.sv
+close [ open C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/mem2p_sw_sr.sv w ]
+add_files C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/mem2p_sw_sr.sv
+update_compile_order -fileset sources_1

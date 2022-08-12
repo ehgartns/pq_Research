@@ -71,3 +71,44 @@ launch_simulation
 source core_sim.tcl
 close_sim
 launch_simulation
+source core_sim.tcl
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/U_PQ_IF_RD}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/LFSR/q}} 
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/FSM/state}} 
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/din}} 
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/newVal}} 
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/oldVal}} 
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/verdict}} 
+current_wave_config {Untitled 4}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/cteal_15}} 
+relaunch_sim
+close_sim
+launch_simulation
+source core_sim.tcl
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/U_PQ_IF_RD}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/LFSR/q}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/FSM/state}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/din}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/newVal}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/oldVal}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/verdict}} 
+current_wave_config {Untitled 5}
+add_wave {{/core_sim/DUV/AUTO/COMPCOUNT/cteal_15}} 
+relaunch_sim
+run all
+close_sim

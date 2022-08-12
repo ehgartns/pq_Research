@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -93,18 +95,15 @@ read_verilog -library xil_defaultlib -sv {
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/flip_flop.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/fsm_pq.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/high_level.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheapTypes.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/leq1.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/levelRam.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/level_shifter.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/lfsr.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/mux8.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/period_enb.sv}
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/pheap_pq test/pheap_pq.sv}
   C:/Users/ehgartns/Documents/new_pq_repo/pq_if.sv
-  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/pq_rd_if.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/ra_pq test/ra_pq.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/ra_pq_r test/ra_pq_mux2.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/ra_pq_r test/ra_pq_mux3.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/ra_pq_r test/ra_pq_reg.sv}
+  {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/ra_pq_r test/ra_pq_sort2.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/rgb_pwm.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ctl.sv}
   {C:/Users/ehgartns/Documents/new_pq_repo/auto_pq_16 bit/RTL/sevenseg_ext_n.sv}

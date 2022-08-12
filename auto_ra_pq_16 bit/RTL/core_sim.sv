@@ -43,12 +43,7 @@ module core_sim;
     @ (posedge clk) #1;
     rst = 0;
     start = 1;
-    repeat (150) @(posedge clk); #1;
-    rst = 1;
-    repeat (20) @ (posedge clk); #1;
-    rst = 0;
-    start = 1;
-    repeat (150) @(posedge clk); #1;
+    repeat (500) @(posedge clk); #1;
     $stop;
     end
     

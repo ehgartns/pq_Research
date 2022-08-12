@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Aug  1 15:35:12 2022
+| Date         : Wed Aug  3 13:45:17 2022
 | Host         : ECE419-92QW0Q2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file highest_level_utilization_synth.rpt -pb highest_level_utilization_synth.pb
 | Design       : highest_level
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1178 |     0 |     63400 |  1.86 |
-|   LUT as Logic          | 1178 |     0 |     63400 |  1.86 |
+| Slice LUTs*             | 6507 |     0 |     63400 | 10.26 |
+|   LUT as Logic          | 6507 |     0 |     63400 | 10.26 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  379 |     0 |    126800 |  0.30 |
-|   Register as Flip Flop |  379 |     0 |    126800 |  0.30 |
+| Slice Registers         | 4150 |     0 |    126800 |  3.27 |
+|   Register as Flip Flop | 4150 |     0 |    126800 |  3.27 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
@@ -56,22 +56,21 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 66    |          Yes |         Set |            - |
-| 313   |          Yes |       Reset |            - |
+| 2050  |          Yes |         Set |            - |
+| 2100  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+-------------------+------+-------+-----------+-------+
-|     Site Type     | Used | Fixed | Available | Util% |
-+-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    7 |     0 |       135 |  5.19 |
-|   RAMB36/FIFO*    |    7 |     0 |       135 |  5.19 |
-|     RAMB36E1 only |    7 |       |           |       |
-|   RAMB18          |    0 |     0 |       270 |  0.00 |
-+-------------------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       135 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       135 |  0.00 |
+|   RAMB18       |    0 |     0 |       270 |  0.00 |
++----------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -147,16 +146,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  862 |                 LUT |
-| FDRE     |  313 |        Flop & Latch |
-| LUT3     |  241 |                 LUT |
-| LUT5     |  133 |                 LUT |
-| LUT4     |   91 |                 LUT |
-| FDSE     |   66 |        Flop & Latch |
-| CARRY4   |   35 |          CarryLogic |
-| LUT2     |   29 |                 LUT |
+| LUT3     | 5077 |                 LUT |
+| LUT5     | 4640 |                 LUT |
+| FDRE     | 2100 |        Flop & Latch |
+| FDSE     | 2050 |        Flop & Latch |
+| LUT4     | 1543 |                 LUT |
+| LUT6     |  568 |                 LUT |
+| CARRY4   |  261 |          CarryLogic |
 | OBUF     |   26 |                  IO |
-| RAMB36E1 |    7 |        Block Memory |
+| LUT2     |    5 |                 LUT |
 | IBUF     |    3 |                  IO |
 | LUT1     |    2 |                 LUT |
 | BUFG     |    1 |               Clock |

@@ -6,16 +6,13 @@ sv xil_defaultlib  \
 "../../../../RTL/flip_flop.sv" \
 "../../../../RTL/fsm_pq.sv" \
 "../../../../RTL/high_level.sv" \
-"../../../../pheap_pq test/leq.sv" \
-"../../../../pheap_pq test/leq1.sv" \
-"../../../../pheap_pq test/level.sv" \
-"../../../../pheap_pq test/levelRam.sv" \
-"../../../../pheap_pq test/level_shifter.sv" \
 "../../../../RTL/lfsr.sv" \
-"../../../../pheap_pq test/pheapTypes.sv" \
-"../../../../pheap_pq test/pheap_pq.sv" \
 "../../../../../pq_if.sv" \
-"../../../../RTL/pq_rd_if.sv" \
+"../../../../ra_pq test/ra_pq.sv" \
+"../../../../ra_pq_r test/ra_pq_mux2.sv" \
+"../../../../ra_pq_r test/ra_pq_mux3.sv" \
+"../../../../ra_pq_r test/ra_pq_reg.sv" \
+"../../../../ra_pq_r test/ra_pq_sort2.sv" \
 "../../../../RTL/core_sim.sv" \
 
 # compile glbl module

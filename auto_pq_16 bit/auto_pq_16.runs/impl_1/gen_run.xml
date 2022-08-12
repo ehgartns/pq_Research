@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1659382430">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1659548474">
   <File Type="BITSTR-BMM" Name="highest_level_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="highest_level_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="highest_level_timing_summary_init.rpt"/>
@@ -133,48 +133,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/pheap_pq test/pheapTypes.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/pheap_pq test/leq.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/pheap_pq test/leq1.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/pheap_pq test/level.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/pheap_pq test/levelRam.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/pheap_pq test/level_shifter.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/RTL/lfsr.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -196,13 +154,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/pheap_pq test/pheap_pq.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../pq_if.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -210,7 +161,35 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/RTL/pq_rd_if.sv">
+    <File Path="$PPRDIR/ra_pq test/ra_pq.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ra_pq_r test/ra_pq_mux2.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ra_pq_r test/ra_pq_mux3.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ra_pq_r test/ra_pq_reg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ra_pq_r test/ra_pq_sort2.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -240,6 +219,78 @@
     </File>
     <File Path="$PPRDIR/RTL/highest_level.sv">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ra_pq_r test/ra_pq_r.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/pheapTypes.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/leq.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/leq1.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/level.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/levelRam.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/level_shifter.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pheap_pq test/pheap_pq.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/RTL/pq_rd_if.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -286,46 +337,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/sr_pq_s test/sr_pq_s_stage.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/ra_pq_r test/ra_pq_mux2.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/ra_pq_r test/ra_pq_mux3.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/ra_pq_r test/ra_pq_r.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/ra_pq_r test/ra_pq_reg.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/ra_pq_r test/ra_pq_sort2.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
