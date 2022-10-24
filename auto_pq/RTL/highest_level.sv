@@ -43,7 +43,7 @@ module highest_level(input logic clk, rst, start,
                      
                      rgb_pwm RGB (.clk, .rst, .led_r(rgb_r), .led_g(rgb_g), .led_b(rgb_b), .color_r(red), .color_g(green), .color_b(blue));
                      
-                     sevenseg_ctl SEVENSEG (.clk, .rst, .d7(7'b1111111), .d6(7'b1111111), .d5(7'b1111111), .d4(7'b1111111), 
+                     sevenseg_ctl SEVENSEG (.clk, .rst, .d7(7'b0001010), .d6(7'b0001011), .d5(7'b0001100), .d4(7'b0001111), 
                                             .d3(7'b1111111), .d2(7'b1111111), .d1({3'b0, data2}), .d0({3'b0, data1}), .segs_n, .dp_n, .an_n);
                      
                      

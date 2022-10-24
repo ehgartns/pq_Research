@@ -22,7 +22,7 @@
 
 module counter (
     input logic clk, rst, enb,
-    output logic [4-1:0] q
+    output logic [3:0] q
     );
 
     always_ff @(posedge clk)

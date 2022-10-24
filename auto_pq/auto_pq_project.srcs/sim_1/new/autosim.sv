@@ -30,7 +30,7 @@ module autosim;
     logic [2:0] color_r, color_g, color_b;
     logic [1:0] data1, data2, data3, data4;
     
-    auto_top DUV (.ti(U_PQ_IF.client), .rst, .start, .kvo_logic, .color_r, .color_g, .color_b, .data1, .data2, .data3, .data4,
+    auto_top DUV (.ti(U_PQ_IF.client), .rst, .start, .kvo_logic, .color_r, .color_g, .color_b, .data1, .data2,
                                  .sigIDLE, .sigSTART, .sigADD, .sigREMOVE, .sigDISPLAY, .sigFULL, .sigEMPTY);
                                  
     parameter CLK_PD = 20;

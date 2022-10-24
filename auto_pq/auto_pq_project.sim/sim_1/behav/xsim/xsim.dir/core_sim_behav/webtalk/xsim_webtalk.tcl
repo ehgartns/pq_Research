@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/
+webtalk_init -webtalk_dir C:/Users/dennismj/Documents/pq_Research/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Jul 21 13:09:44 2022" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Oct 24 19:29:07 2022" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -12,15 +12,15 @@ webtalk_add_data -client project -key target_family -value "not_applicable" -con
 webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "7d2a1dc1-aa9f-4db6-8ef1-17aaa829b832" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "98c5f0ca-e0ea-4aa7-8bf2-068b6dcd57e7" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "b806ec43a6fe489da77b9eac31be4ec7" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "152" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "156" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
-webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i3-7100 CPU @ 3.90GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "3912 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_name -value "12th Gen Intel(R) Core(TM) i5-12500" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2995 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
-webtalk_add_data -client project -key system_ram -value "17.000 GB" -context "user_environment"
+webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
@@ -28,6 +28,6 @@ webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\
 webtalk_add_data -client xsim -key runtime -value "12211 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6696_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 699413011 -regid "" -xml C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/ehgartns/Documents/summerReasearch2022/hw_pq/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6984_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3903097705 -regid "" -xml C:/Users/dennismj/Documents/pq_Research/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/dennismj/Documents/pq_Research/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/dennismj/Documents/pq_Research/auto_pq/auto_pq_project.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

@@ -24,7 +24,7 @@ module sevenseg_ctl(
     );
 
     logic enb, clr;
-    logic [2:0] digit;  // count of current digit
+    logic [3:0] digit;  // count of current digit
     logic [6:0] muxd;
 
     assign clr = 1'b0;
