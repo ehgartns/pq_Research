@@ -74,8 +74,8 @@ pq_if.dev di
 
     dffe TEMP_REGISTER (.clk, .d(kvi_logic), .enb, .q(temp_reg)); // look into kvi_logic
     
-    quickFSM FSM (.clk, .rst, .busy, .full, .empty, .enq, .deq, .key_addr(BRAM_reg), .key_reg(temp_reg), .count_incr(FSM2addr), .current_size_enb(FSM2size), .select(sel), .we1(write), .deq_shift,
-                  .key2temp, .key2BRAM(BRAM_in));
+    //quickFSM FSM (.clk, .rst, .busy, .full, .empty, .enq, .deq, .key_addr(BRAM_reg), .key_reg(temp_reg), .count_incr(FSM2addr), .current_size_enb(FSM2size), .select(sel), .we1(write), .deq_shift,
+                  //.key2temp, .key2BRAM(BRAM_in));
                   
     counter_size COUNT_SIZE (.clk, .rst, .sel, .count_size_enb(FSM2addr), .size);
     
