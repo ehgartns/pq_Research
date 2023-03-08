@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module controlNode(
-
-    );
+module controlNode(input logic clk, read_i, write_i, reset_i,
+                   output logic sel_i, sel_o, sel_b, rd_addr, wr_addr, enables, read_o, write_o, reset_o
+                   );
 endmodule

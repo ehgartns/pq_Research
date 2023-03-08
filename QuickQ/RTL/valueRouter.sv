@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/01/2023 04:01:35 PM
+// Create Date: 03/08/2023 02:09:01 PM
 // Design Name: 
-// Module Name: mux2
+// Module Name: valueRouter
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,13 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux2 #(parameter W=32)
-             (input logic [W-1:0]  d0, d1,
-              input logic          sel,
-              output logic [W-1:0] y );
+module valueRouter(input logic clk, reg_data, ram_data,
+                   output logic data_out, fb
 
-   always_comb
-     if (sel) y = d1;
-     else y = d0;
-
-endmodule: mux2
+    );
+endmodule

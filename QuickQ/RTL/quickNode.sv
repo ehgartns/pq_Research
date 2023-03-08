@@ -21,8 +21,10 @@
 
 
 module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i,
-                 output logic data_rt_o, read_o, write_o, reset_o
+                 output logic data_rt_o, data_lt_o, read_o, write_o, reset_o
                  );
+                 
+                 
                  
                  // WIRES
                  logic enb;
@@ -30,22 +32,29 @@ module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i
                  logic rBRAM;
                  logic sel_b;
                  logic ram_in;
+                 logic ram_out;
                  logic sel_o;
                  logic sel_i;
                  logic into_reg;
                  logic outof_reg;
+                 logic router_out;
+                 logic fb;
                  
-                 controlNode CTL (.clk, .read_i, .write_i, .reset_i, .sel_i, .sel_o, .sel_b, .rd_addr, .wr_addr, .enables(enb), .read_o, .write_o, .reset_o);
+                 assign data_lt_o = ram_out;
                  
-                 mem2p_sw_sr BRAM (.clk, .we1(enb), .addr1(wBRAM), .din1(ram_in), .addr2(rBRAM), .dout2());
+                 controlNode CTL (.clk, .read_i, .write_i, .reset_i, .sel_i, .sel_o, .sel_b, .rd_addr(rBRAM), .wr_addr(wBRAM), .enables(enb), .read_o, .write_o, .reset_o);
+                 
+                 mem2p_sw_sr BRAM (.clk, .we1(enb), .addr1(wBRAM), .din1(ram_in), .addr2(rBRAM), .dout2(ram_out));
                  
                  mux2 select_in (.d0(), .d1(data_rt_i), .sel(sel_b), .y(ram_in));
                  
-                 mux2 data_out (.d0(), .d1(), .sel(sel_o), .y(data_rt_o));
+                 mux2 data_out (.d0(router_out), .d1(), .sel(sel_o), .y(data_rt_o));
                  
-                 mux2 data_in (.d0(data_lt_i), .d1(), .sel(sel_i), .y());
+                 mux2 data_in (.d0(data_lt_i), .d1(fb), .sel(sel_i), .y(into_reg));
                  
                  dff register (.clk, .d(into_reg), .q(outof_reg));
+                 
+                 valueRouter VR (.clk, .reg_data(outof_reg), .ram_data(ram_out), .data_out(router_out), .fb(fb));
                  
                  
 endmodule

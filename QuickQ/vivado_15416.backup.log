@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 10 11:31:43 2022
+# Process ID: 15416
+# Current directory: C:/Users/ehgartns/Documents/new_pq_repo/QuickQ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10512 C:\Users\ehgartns\Documents\new_pq_repo\QuickQ\QuickQ_project.xpr
+# Log file: C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/vivado.log
+# Journal file: C:/Users/ehgartns/Documents/new_pq_repo/QuickQ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/QuickQ_project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/QuickQ_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1075.816 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/count_increase.sv w ]
+add_files C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/count_increase.sv
+update_compile_order -fileset sources_1
+set_property top count_increase [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: count_increase
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1582.125 ; gain = 250.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'count_increase' [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/count_increase.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'count_increase' (1#1) [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/count_increase.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1658.438 ; gain = 327.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1661.160 ; gain = 329.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1661.160 ; gain = 329.895
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1661.160 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1723.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1793.148 ; gain = 461.883
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1793.148 ; gain = 717.332
+set_property top quickq [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+ERROR: [Synth 8-1031] enb is not declared [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv:73]
+ERROR: [Synth 8-1031] enb is not declared [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv:75]
+ERROR: [Synth 8-1031] busy is not declared [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv:77]
+ERROR: [Synth 8-1031] key2temp is not declared [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv:78]
+ERROR: [Synth 8-1031] size is not declared [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv:80]
+INFO: [Synth 8-2350] module quickq ignored due to previous errors [C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv:23]
+Failed to read verilog 'C:/Users/ehgartns/Documents/new_pq_repo/QuickQ/RTL/quickq.sv'
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1877.797 ; gain = 71.641
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 10 16:17:24 2022...
