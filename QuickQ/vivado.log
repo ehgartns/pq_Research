@@ -412,3 +412,7 @@ set_property is_enabled false [get_files  C:/Users/ehgartns/Documents/PQrep/pq_R
 set_property is_enabled false [get_files  C:/Users/ehgartns/Documents/PQrep/pq_Research/QuickQ/QuickQ_project.srcs/sources_1/new/counter_size.sv]
 set_property is_enabled false [get_files  C:/Users/ehgartns/Documents/PQrep/pq_Research/QuickQ/RTL/dffe.sv]
 set_property is_enabled false [get_files  C:/Users/ehgartns/Documents/PQrep/pq_Research/QuickQ/RTL/quickFSM.sv]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Mar  8 14:32:06 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ehgartns/Documents/PQrep/pq_Research/QuickQ/QuickQ_project.runs/synth_1/runme.log

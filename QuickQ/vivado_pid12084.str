@@ -822,3 +822,5 @@ dismissDialog("Starting Design Runs"); // bz
 // ag (cr): Synthesis Completed: addNotify
 // Elapsed time: 33 seconds
 dismissDialog("Synthesis Completed"); // ag
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
