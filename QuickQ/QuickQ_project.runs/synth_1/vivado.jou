@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Mar  8 14:32:09 2023
-# Process ID: 1568
+# Start of session at: Mon Mar 20 13:32:55 2023
+# Process ID: 14076
 # Current directory: C:/Users/ehgartns/Documents/PQrep/pq_Research/QuickQ/QuickQ_project.runs/synth_1
 # Command line: vivado.exe -log quickNode.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source quickNode.tcl
 # Log file: C:/Users/ehgartns/Documents/PQrep/pq_Research/QuickQ/QuickQ_project.runs/synth_1/quickNode.vds

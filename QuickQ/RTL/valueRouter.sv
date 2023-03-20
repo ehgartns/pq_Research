@@ -21,7 +21,10 @@
 
 
 module valueRouter(input logic clk, reg_data, ram_data,
-                   output logic data_out, fb
+                   output logic data_out, fb );
+                   
+                   always_comb
+                    if (reg_data > ram_data) fb = 1'b0; // register value is larger OR equal to the current BRAM value
+                    else fb = 1'b1;                     // register value is smaller than the current BRAM value
 
-    );
 endmodule
