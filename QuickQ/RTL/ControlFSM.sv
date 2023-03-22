@@ -42,12 +42,21 @@ module ControlFSM(input logic clk, result, rst,
                     case (state)
                         IDLE:
                             begin
-                            //state code goes here
+                            we = 0;
+                            incr = 0;
+                            
+                            if (result == 1) next = ADV_ADDR;   // register data larger than current RAM address data
+                            else if (result == 0) next = SWAP;  // RAM address data larger than register data
+                            else next = IDLE;
+                            
                             end
                         
                         ADV_ADDR:
                             begin
-                            //state code goes here
+                            
+                            incr = 1;   // enable counter for one clk cycle
+                            next = IDLE;
+                            
                             end
                         
                         SWAP:

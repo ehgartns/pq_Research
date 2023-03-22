@@ -42,7 +42,7 @@ module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i
                  
                  assign data_lt_o = ram_out;
                  
-                 controlNode CTL (.clk, .read_i, .write_i, .reset_i, .sel_i, .sel_o, .sel_b, .rd_addr(rBRAM), .wr_addr(wBRAM), .enables(enb), .read_o, .write_o, .reset_o);
+                 controlNode CTL (.clk, .read_i, .write_i, .reset_i, .result(fb), .sel_i, .sel_o, .sel_b, .rd_addr(rBRAM), .wr_addr(wBRAM), .enables(enb), .read_o, .write_o, .reset_o);
                  
                  mem2p_sw_sr BRAM (.clk, .we1(enb), .addr1(wBRAM), .din1(ram_in), .addr2(rBRAM), .dout2(ram_out));
                  

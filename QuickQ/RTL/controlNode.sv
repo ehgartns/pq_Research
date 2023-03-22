@@ -20,16 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module controlNode(input logic clk, read_i, write_i, reset_i,
+module controlNode(input logic clk, read_i, write_i, reset_i, result,
                    output logic sel_i, sel_o, sel_b, rd_addr, wr_addr, enables, read_o, write_o, reset_o
                    );
                    
                    // WIRES
                    logic count_increase;
-                   logic result;
                    logic rst;
                    
-                   ControlFSM FSM (.clk, .result, .rst, .we(enables), .incr(count_increase));
+                   ControlFSM FSM (.clk, .result(result), .rst, .we(enables), .incr(count_increase));
                    
                    counter COUNT (.clk, .rst, .enb(count_increase), .q(rd_addr));
 endmodule
