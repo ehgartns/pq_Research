@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i,
+module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i, enq, deq,
                  output logic data_rt_o, data_lt_o, read_o, write_o, reset_o
                  );
                  
@@ -39,10 +39,12 @@ module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i
                  logic outof_reg;
                  logic router_out;
                  logic fb;
+                 logic register_enable;
                  
                  assign data_lt_o = ram_out;
                  
-                 controlNode CTL (.clk, .read_i, .write_i, .reset_i, .result(fb), .sel_i, .sel_o, .sel_b, .rd_addr(rBRAM), .wr_addr(wBRAM), .enables(enb), .read_o, .write_o, .reset_o);
+                 controlNode CTL (.clk, .read_i, .write_i, .reset_i, .result(fb), .enq, .deq, .sel_i, .sel_o, .sel_b, .rd_addr(rBRAM), .wr_addr(wBRAM), 
+                                  .enables(enb), .read_o, .write_o, .reset_o, .regenb(register_enable), .regsel(sel_i));
                  
                  mem2p_sw_sr BRAM (.clk, .we1(enb), .addr1(wBRAM), .din1(ram_in), .addr2(rBRAM), .dout2(ram_out));
                  
@@ -52,7 +54,7 @@ module quickNode(input logic clk, data_lt_i, data_rt_i, read_i, write_i, reset_i
                  
                  mux2 data_in (.d0(data_lt_i), .d1(fb), .sel(sel_i), .y(into_reg));
                  
-                 dff register (.clk, .d(into_reg), .q(outof_reg));
+                 dff register (.clk, .enb(register_enable), .d(into_reg), .q(outof_reg));
                  
                  valueRouter VR (.clk, .reg_data(outof_reg), .ram_data(ram_out), .data_out(router_out), .fb(fb));
                  

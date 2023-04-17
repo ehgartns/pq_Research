@@ -20,14 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ControlFSM(input logic clk, result, rst,
-                  output logic we, incr
+module ControlFSM(input logic clk, rst, enq, deq, result,
+                  output logic we, regenb, regsel, countenb
                   );
 
-            typedef enum logic [2:0] {
-                IDLE = 3'b001, // may not be necessary
-                ADV_ADDR = 3'b010,
-                SWAP = 3'b100 
+            typedef enum logic [3:0] {
+                IDLE = 4'b0001,
+                COMPARE = 4'b0010,
+                ADV_ADDR = 4'b0100,
+                SWAP = 4'b1000 
             } states_t;
             
             states_t state, next;
@@ -42,28 +43,35 @@ module ControlFSM(input logic clk, result, rst,
                     case (state)
                         IDLE:
                             begin
-                            we = 0;
-                            incr = 0;
+                                regenb = 0;
+                                regsel = 0;
+                                we = 0;
+                                countenb = 0;
+                                
+                                if (!enq && !deq) next = IDLE;
+                                else if (enq && !deq) next = COMPARE;
+                                else next = IDLE;
+                            end
+                        
+                        COMPARE:
+                            begin
+                                countenb = 0; // shut off count
                             
-                            if (result == 1) next = ADV_ADDR;   // register data larger than current RAM address data
-                            else if (result == 0) next = SWAP;  // RAM address data larger than register data
-                            else next = IDLE;
-                            
+                                if (result == 1) next = ADV_ADDR; // register value is larger than ram value -- increment ram address
+                                else if (result == 0) next = SWAP; // register value is smaller than ram value -- initiate swap
+                                else next = IDLE;
                             end
                         
                         ADV_ADDR:
                             begin
-                            
-                            incr = 1;   // enable counter for one clk cycle
-                            next = IDLE;
-                            
+                                countenb = 1; // turn on count for one clock cycle
+                                next = COMPARE; 
                             end
-                        
+                            
                         SWAP:
                             begin
-                            //state code goes here
-                            end
                         
+                            end
                     endcase
                end
                 

@@ -26,8 +26,8 @@ module valueRouter(input logic clk, reg_data, ram_data,
                    logic result;
                    
                    always_comb
-                    if (reg_data > ram_data) result = 1'b0; // register value is larger OR equal to the current BRAM value
-                    else result = 1'b1;                     // register value is smaller than the current BRAM value
+                    if (reg_data > ram_data) result = 1'b0; // register value is larger OR equal to the current BRAM value / result = 1
+                    else result = 1'b1;                     // register value is smaller than the current BRAM value / result = 0
 
                     mux2 MUX (.d0(reg_data), .d1(ram_data), .sel(result), .y(data_out));
                     
