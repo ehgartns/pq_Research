@@ -20,8 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module valueRouter(input logic clk, reg_data, ram_data,
-                   output logic data_out, fb);
+module valueRouter(input logic clk, 
+                   input logic [31:0] reg_data, ram_data,
+                   output logic [31:0] data_out, 
+                   output logic fb);
                    
                    logic result;
                    

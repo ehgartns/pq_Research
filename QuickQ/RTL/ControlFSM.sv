@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ControlFSM(input logic clk, rst, enq, deq, result,
+module ControlFSM(input logic clk, rst, enq, deq, dout, result,
                   output logic we, regenb, regsel, countenb
                   );
 
@@ -56,8 +56,11 @@ module ControlFSM(input logic clk, rst, enq, deq, result,
                         COMPARE:
                             begin
                                 countenb = 0; // shut off count
-                            
-                                if (result == 1) next = ADV_ADDR; // register value is larger than ram value -- increment ram address
+                                we = 0; // shut off write
+                                
+                                
+                                if (result == 1 && dout == 1) next = IDLE; //DUMMY VALUE until we set bitwidths, the dout should be FF eventually
+                                else if (result == 1) next = ADV_ADDR; // register value is larger than ram value -- increment ram address
                                 else if (result == 0) next = SWAP; // register value is smaller than ram value -- initiate swap
                                 else next = IDLE;
                             end
@@ -70,7 +73,11 @@ module ControlFSM(input logic clk, rst, enq, deq, result,
                             
                         SWAP:
                             begin
-                        
+                                regsel = 0;
+                                we = 1;
+                                regenb = 1;
+                                countenb = 1;
+                                next = COMPARE;
                             end
                     endcase
                end
